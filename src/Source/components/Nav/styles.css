@@ -1,0 +1,78 @@
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__menu {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.menu__list {
+    display: flex;
+    /* отступ между элементами, не рекомендуется т к у старых сафари нет поддержки*/
+    /* gap: 40px; */
+}
+
+.menu__item {
+    color: #FFFFFF;
+    margin: 0px 40px 0px 0px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 0, 0, 0);
+    transition: all 0.3s ease-in;
+    filter: brightness(0.45);
+}
+
+.menu__item:hover {
+    border-bottom: 1px solid red;
+    filter: brightness(2);
+    border-radius: 4px;
+}
+
+.menu__icon {
+    color: #FE390C;
+}
+
+.menu__link {
+    font-family: Raleway;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    /* запись в таком виде дает нам относительный размер */
+    line-height: 1.2;
+    color: #A9A9AA;
+    letter-spacing: 1px;
+}
+
+.burger__link {
+    color: #fbf9f8;
+    transition: color 0.3s ease-in;
+}
+
+.burger__link:hover {
+    color: #FE390C;
+}
+
+#basic-menu ul {
+    background-color: #020202;
+}
+
+@media (max-width: 767.98px) {
+    .menu__body {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .icon-menu {
+        height: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

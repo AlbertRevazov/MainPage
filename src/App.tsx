@@ -1,14 +1,22 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
-import { FirstPage } from "./Source/components/FirstPage";
+import { Layout } from "./Source/components/Layout";
+import { HomePage } from "./Source/components/Home";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<FirstPage />} />
+          <Route
+            path="/"
+            element={
+              <Layout>
+                <HomePage />
+              </Layout>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </div>
