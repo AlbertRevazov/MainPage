@@ -18,6 +18,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 80px
+  }
+
+  @media (max-width: 767.98px) {
+    margin: 0;
   }
 }
 
@@ -89,7 +94,6 @@
 @media (max-width: 559.98px) {
   .title__years {
     justify-content: end;
-    /* width: 200px; */
   }
 
   .title__stack {
@@ -129,6 +133,7 @@
   letter-spacing: -0.02em;
   color: #a9a9aa;
   margin-top: 29px;
+
 }
 
 .about__hero__title {
@@ -143,11 +148,22 @@
   text-transform: uppercase;
   color: #111214;
   margin-bottom: 29px;
+
 }
 
-.about__hero__title,
-p {
-  @media (max-width: 559.98px) {
-    width: 100%;
+
+span {
+  width: 100%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #A9A9AA;
+
+  @media (max-width: 767.98px) {
+    font-size: 10px;
+    line-height: 22px;
   }
 }
