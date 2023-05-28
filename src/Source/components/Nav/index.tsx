@@ -25,6 +25,11 @@ export const Navbar: FC = () => {
                 SERVICE
               </a>
             </li>
+            <li className="menu__item">
+              <a href="#portfolio" className="menu__link">
+                PORTFOLIO
+              </a>
+            </li>
           </ul>
         </nav>
       ) : (
