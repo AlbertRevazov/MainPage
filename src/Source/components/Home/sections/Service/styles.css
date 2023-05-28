@@ -1,0 +1,46 @@
+.service__container {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    @media(max-width:1099.98px) {
+        top: 90px;
+    }
+
+    @media(max-width:767.98px) {
+        top: 180px;
+    }
+}
+
+
+.service__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #111214;
+}
+
+.service__title h3 {
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 120px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FE390C;
+    margin: 0 12px;
+}

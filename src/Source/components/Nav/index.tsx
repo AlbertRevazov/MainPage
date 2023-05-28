@@ -16,12 +16,12 @@ export const Navbar: FC = () => {
               </a>
             </li>
             <li className="menu__item">
-              <a href="#" className="menu__link">
+              <a href="#about" className="menu__link">
                 ABOUT
               </a>
             </li>
             <li className="menu__item">
-              <a href="#" className="menu__link">
+              <a href="#service" className="menu__link">
                 SERVICE
               </a>
             </li>
