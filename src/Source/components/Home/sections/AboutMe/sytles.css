@@ -1,0 +1,153 @@
+.about__container {
+  position: relative;
+  left: 0px;
+  top: 114px;
+  max-width: 1107px;
+  margin: 80px auto;
+
+  @media (max-width: 767.98px) {
+    margin: -30px auto;
+  }
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: space-around;
+
+  @media (max-width: 1099.98px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.about__wrapper__blocks {
+  display: flex;
+  justify-content: space-around;
+  min-width: 540px;
+
+  @media (max-width: 559.98px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    margin: 0 auto;
+  }
+}
+
+.about__stack__block,
+.about__years__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 440px;
+}
+
+@media (max-width: 559.98px) {
+  .about__stack__block {
+    width: 90%;
+    align-items: flex-start;
+    justify-content: start;
+  }
+
+  .about__years__block {
+    width: 90%;
+    align-items: flex-end;
+    justify-content: end;
+  }
+}
+
+.years__image {
+  background-color: #000;
+}
+
+.image {
+  max-width: 230px;
+  height: 256.58px;
+  border-radius: 5px;
+}
+
+.title__years,
+.title__stack {
+  text-align: end;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 39.47px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 31px auto;
+  letter-spacing: -0.04em;
+  color: #111214;
+}
+
+@media (max-width: 559.98px) {
+  .title__years {
+    justify-content: end;
+    /* width: 200px; */
+  }
+
+  .title__stack {
+    margin: 31px 0;
+  }
+}
+
+.count {
+  color: #fe390c;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 96px;
+  margin: 12px;
+}
+
+.about__hero {
+  max-width: 501px;
+  height: 284.21px;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.about__hero__text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #a9a9aa;
+  margin-top: 29px;
+}
+
+.about__hero__title {
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #111214;
+  margin-bottom: 29px;
+}
+
+.about__hero__title,
+p {
+  @media (max-width: 559.98px) {
+    width: 100%;
+  }
+}
