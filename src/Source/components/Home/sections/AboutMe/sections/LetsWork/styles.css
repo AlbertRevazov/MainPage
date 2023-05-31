@@ -65,6 +65,10 @@
 .work__download {
     display: flex;
     justify-content: space-around;
+    margin: 24px auto;
+}
+
+.work__download a {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
@@ -73,10 +77,6 @@
     text-transform: capitalize;
     letter-spacing: -0.04em;
     color: #a9a9aa;
-    margin: 24px auto;
-}
-
-.work__download p {
     margin: 0 8px;
 }
 

@@ -1,7 +1,8 @@
 import React, { FC } from "react";
-import { HeaderBlock } from "./sections/header";
+import { HeaderBlock } from "./sections/Welcome";
 import { AboutMe } from "./sections/AboutMe";
 import { Service } from "./sections/Service";
+import { WorkExperience } from "./sections/WorkExperience";
 
 export const HomePage: FC = () => {
   return (
@@ -9,6 +10,7 @@ export const HomePage: FC = () => {
       <HeaderBlock />
       <AboutMe />
       <Service />
+      <WorkExperience />
     </>
   );
 };

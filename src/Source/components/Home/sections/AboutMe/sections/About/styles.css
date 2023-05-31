@@ -74,6 +74,7 @@
   height: 256.58px;
   border-radius: 5px;
   transition: transform 400ms ease-in-out;
+  cursor: pointer;
 }
 
 .image:hover {

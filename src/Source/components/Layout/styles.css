@@ -1,76 +1,74 @@
 .main {
-	flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .header__nav {
-	position: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
-	background-color: #111214;
-	z-index: 50px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #111214;
+  z-index: 50px;
+
+  @media (max-width: 767.98px) {
+    position: fixed;
+    z-index: 999;
+  }
 }
 
 .header__container {
-	display: flex;
-	min-height: 114px;
-	align-items: center;
+  display: flex;
+  min-height: 114px;
+  align-items: center;
 }
 
-/* .first__letter {
-	color: #FE390C;
-} */
-
 .first__letter {
-	color: #FE390C;
-	font-family: 'Anton';
-	font-style: normal;
-	font-weight: 400;
-	text-transform: uppercase;
-	font-size: 28px;
+  color: #fe390c;
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 28px;
 }
 
 .header__logo {
-	text-align: left;
-	font-family: 'Anton';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 28px;
-	color: #FFFFFF;
-	text-transform: uppercase;
+  text-align: left;
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .header__button {
-	/* flex: 0 0 252px; */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* border: 1px solid #FE390C; */
-	border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 
 .button {
-	/* ссылка она строчная  когда она не флекс элемент*/
-	display: inline-block;
-	font-family: Raleway;
-	text-transform: uppercase;
-	font-weight: 800;
-	font-size: 10px;
-	line-height: 1.2;
-	letter-spacing: 1px;
-	color: #FE390C;
-	padding: 14px 30px;
-	border-radius: 5px;
-	border: 1px solid #FE390C;
-	/* background-color: #ec5863; */
-	transition: all 0.3s ease 0s;
+  /* ссылка она строчная  когда она не флекс элемент*/
+  display: inline-block;
+  font-family: Raleway;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: #fe390c;
+  padding: 14px 30px;
+  border-radius: 5px;
+  border: 1px solid #fe390c;
+  transition: all 0.3s ease 0s;
 }
 
 .button:hover {
-	border: 1px solid #fcfcfb;
-	color: #fcfcfb;
+  border: 1px solid #fcfcfb;
+  color: #fcfcfb;
 }
 
 .icon-menu {
-	display: none;
+  display: none;
 }

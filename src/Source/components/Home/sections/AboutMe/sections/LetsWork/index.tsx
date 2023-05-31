@@ -10,7 +10,9 @@ export const LetsWork: FC = () => {
         <button className="work__button"> hire me now</button>
         <div className="work__download">
           <Icon src="/img/icons/download.png" alt="" width={16} height={16} />
-          <p> Download CV </p>
+          <a href="/files/cv.zip" download="">
+            Download CV
+          </a>
         </div>
       </div>
     </div>

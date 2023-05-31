@@ -7,7 +7,8 @@ export const Service: FC = () => {
     <div id="service" className="service__container">
       <div className="service__wrapper">
         <div className="service__title">
-          <h3 className={"service__count"}>02</h3>My Service
+          <h3 className={"service__count"}>02</h3>
+          <h4>My Service</h4>
         </div>
         <div className="service__cards">
           <Card

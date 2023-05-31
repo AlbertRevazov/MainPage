@@ -1,7 +1,8 @@
-.service__container {
+.work__experience {
   position: relative;
   top: 0;
   left: 0;
+  background: #f7f7f7;
 
   @media (max-width: 1099.98px) {
     top: 90px;
@@ -12,14 +13,40 @@
   }
 }
 
-.service__title {
+.work__experience__container {
+  margin: 40px auto;
+}
+
+.work__experience__cards {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: no-wrap;
+  margin: 0 20px;
+
+  @media (max-width: 999.98px) {
+    flex-wrap: wrap;
+  }
+}
+
+.work__experience__carousel {
+  width: 100%;
+  padding: 12px auto;
+  top: 0;
+  left: 0;
+}
+
+.work__experience__title {
   display: flex;
   align-items: center;
   justify-content: start;
   margin: 50px auto;
 }
 
-.service__title h4 {
+.work__experience__title h4 {
   font-family: "Anton";
   font-style: normal;
   font-weight: 400;
@@ -32,7 +59,7 @@
   color: #111214;
 }
 
-.service__title h3 {
+.work__experience__title h3 {
   font-family: "Anton";
   font-style: normal;
   font-weight: 400;
