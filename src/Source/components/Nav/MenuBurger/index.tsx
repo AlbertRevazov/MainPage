@@ -51,8 +51,8 @@ export const MenuBurger = () => {
           </a>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <a className={"burger__link"} href="#portfolio">
-            PORTFOLIO
+          <a className={"burger__link"} href="#experience">
+            EXPERIENCE
           </a>
         </MenuItem>
       </Menu>

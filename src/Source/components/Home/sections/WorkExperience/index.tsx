@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import { Card } from "../../../Card";
 import { data } from "./ExperienceData";
+import { Card } from "../../../Card";
 
 import "./styles.css";
 
