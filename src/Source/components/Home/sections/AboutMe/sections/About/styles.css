@@ -170,7 +170,8 @@ span {
   color: #A9A9AA;
 
   @media (max-width: 767.98px) {
-    font-size: 10px;
-    line-height: 22px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
   }
 }

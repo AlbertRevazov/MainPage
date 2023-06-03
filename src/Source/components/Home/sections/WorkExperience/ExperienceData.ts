@@ -27,12 +27,12 @@ export const data = [
     width: 360,
     height: 244,
   },
-  {
-    id: 3,
-    description: ``,
-    src: "/img/stack.png",
-    title: "-",
-    width: 360,
-    height: 244,
-  },
+  // {
+  //   id: 3,
+  //   description: ``,
+  //   src: "/img/stack.png",
+  //   title: "-",
+  //   width: 360,
+  //   height: 244,
+  // },
 ];

@@ -1,0 +1,19 @@
+.link__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin: 28px;
+  background: rgba(255, 255, 255, 0.1);
+  filter: brightness(0.5);
+  transition: filter 0.3s ease-in;
+}
+
+.link__item:hover {
+  filter: brightness(1);
+}
+.social__media {
+  z-index: 909;
+}

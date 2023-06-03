@@ -2,7 +2,7 @@
   flex: 1 1 auto;
 }
 
-.header__nav {
+.layout__nav {
   position: absolute;
   width: 100%;
   top: 0;
@@ -16,24 +16,25 @@
   }
 }
 
-.header__container {
-  display: flex;
+.layout__container {
   min-height: 114px;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .first__letter {
   color: #fe390c;
-  font-family: "Anton";
+  font-family: Anton;
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 28px;
 }
 
-.header__logo {
+.layout__logo {
   text-align: left;
-  font-family: "Anton";
+  font-family: Anton;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -41,7 +42,7 @@
   text-transform: uppercase;
 }
 
-.header__button {
+.layout__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +52,7 @@
 .button {
   /* ссылка она строчная  когда она не флекс элемент*/
   display: inline-block;
-  font-family: Raleway;
+  font-family: 'Montserrat';
   text-transform: uppercase;
   font-weight: 800;
   font-size: 10px;
@@ -71,4 +72,45 @@
 
 .icon-menu {
   display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 80px;
+  background-color: #0C0C0E;
+
+  margin: 40px auto;
+
+  @media (max-width: 1099.98px) {
+    margin-top: 0;
+    top: 90px;
+  }
+
+  @media (max-width: 767.98px) {
+    top: 180px;
+  }
+}
+
+footer p,
+b {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #A9A9AA;
+}
+
+footer b {
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0 5px;
 }

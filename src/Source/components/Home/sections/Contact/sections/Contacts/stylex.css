@@ -1,0 +1,86 @@
+.contact__info__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 auto;
+
+    @media (max-width:1099.98px) {
+        margin-top: 10px;
+    }
+}
+
+.contact__info__title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Anton";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 10px 0 auto;
+}
+
+.contact__info__title h3 {
+    margin-left: 0;
+}
+
+.contact__us {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0 50px 0;
+}
+
+.contact__item__wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 24px 0 auto;
+}
+
+.contact__item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 10px 16px auto;
+}
+
+.contact__item h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+.contact__item h6 {
+    width: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #A9A9AA;
+    margin: 8px 0 auto;
+}
+
+.contact__info__links {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0 0 auto;
+}
+
+.contact__info__links .link__item:first-child {
+    margin-left: 0;
+}
+
+.contact__info__links .link__item {
+    margin: 10px;
+}

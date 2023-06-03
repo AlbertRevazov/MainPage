@@ -1,0 +1,131 @@
+.contact__email {
+  max-width: 620px;
+}
+
+.contact__email__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 80px 0 auto;
+
+  @media (max-width:767.98px) {
+    margin-top: 50px;
+  }
+}
+
+.contact__email__title {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 36px;
+  align-items: center;
+  color: #ffffff;
+}
+
+.contact__email__title h3 {
+  color: #fe390c;
+  margin: 0 4px;
+}
+
+.contact__inputs__bio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  max-width: 606px;
+
+  @media (max-width:767.98px) {
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+}
+
+.input__item {
+  min-width: 270px;
+}
+
+.input__item h3,
+.input__item__message h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.contact__input {
+  width: 100%;
+  height: 54px;
+  background: rgba(202, 205, 209, 0.1);
+  border-radius: 2px;
+  margin: 10px 0 auto;
+  padding: 4px;
+  display: flex;
+  flex-wrap: wrap;
+
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 36px;
+  letter-spacing: 0.03em;
+  align-items: center;
+  color: #ffffff;
+
+  @media (max-width: 767.98px) {
+    margin-bottom: 10px;
+  }
+}
+
+.input__item__message {
+  margin-bottom: 20px;
+}
+
+.contact__message {
+  width: 100%;
+  min-height: 124px;
+  background: rgba(202, 205, 209, 0.1);
+  border-radius: 2px;
+  margin: 10px 0 0;
+  padding: 4px;
+  display: flex;
+  align-items: flex-start;
+  text-align: start;
+  color: #ffffff;
+  overflow: hidden;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.button__form {
+  width: 148px;
+  height: 47px;
+  background: #fe390c;
+  border-radius: 4px;
+
+
+
+  @media (max-width:1099.98px) and (min-width:767.98px) {
+    margin: 0 auto;
+  }
+}
+
+.button__form h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+}

@@ -11,7 +11,7 @@
   background-image: url("/public/img/block-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
 }
 
 .wrapper__container {
@@ -90,23 +90,6 @@
   height: 264px;
 }
 
-.link__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  margin-bottom: 30px;
-  background: rgba(255, 255, 255, 0.1);
-  filter: brightness(0.5);
-  transition: filter 0.3s ease-in;
-}
-
-.link__item:hover {
-  filter: brightness(1);
-}
-
 .hero__image {
   top: -30px;
   left: -150px;
@@ -155,10 +138,6 @@
     width: 40px;
     left: -15px;
   }
-}
-
-.social__media {
-  z-index: 909;
 }
 
 .hero__bg {
