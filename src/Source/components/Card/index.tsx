@@ -22,8 +22,6 @@ export const Card: FC<CardProps> = ({
   width,
   isWork,
 }) => {
-  console.log(description.split("\n"), "---");
-
   return (
     <>
       {!isWork ? (
@@ -47,10 +45,10 @@ export const Card: FC<CardProps> = ({
             <h2>{title}</h2>
             <h4>
               {description.split("\n").map((string) => (
-                <>
+                <div key={string}>
                   {string}
                   <br />
-                </>
+                </div>
               ))}
             </h4>
           </div>
