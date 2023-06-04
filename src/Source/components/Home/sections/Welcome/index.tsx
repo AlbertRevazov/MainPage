@@ -23,7 +23,7 @@ export const Welcome = () => {
           <img className={"hero__image"} src="/img/abe.png" alt="pic" />
         </div>
       </div>
-      <img className={"hero__bg"} src="/img/bg.png" alt="bg" />
+      <div className={"hero__bg"} />
     </div>
   );
 };
