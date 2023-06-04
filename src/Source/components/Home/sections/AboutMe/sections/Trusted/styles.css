@@ -1,15 +1,11 @@
 .trusted {
   background-color: #f7f7f7;
   position: relative;
-  top: 40px;
+  top: 270px;
   left: 0px;
 
-  @media (max-width: 1099.98px) {
-    top: 130px;
-  }
-
-  @media (max-width: 767.98px) {
-    top: 210px;
+  @media (min-width: 767.98px) {
+    top: 150px;
   }
 }
 

@@ -1,67 +1,81 @@
 .about__container {
   position: relative;
   left: 0px;
-  top: 114px;
+  top: 100px;
   max-width: 1107px;
-  margin: 80px auto;
+  margin: -30px auto;
 
-  @media screen and (max-width: 767.98px) {
-    margin: -30px auto;
+  @media screen and (min-width: 767.98px) {
+    margin: 80px auto;
   }
 }
 
 .about__wrapper {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
 
-  @media screen and (max-width: 1099.98px) {
-    flex-direction: column;
+  @media screen and (min-width: 1099.98px) {
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 80px
+    margin: 20px;
   }
 
-  @media screen and (max-width: 767.98px) {
-    margin: 0;
+  @media screen and (min-width: 559.98px) {
+    align-items: center;
   }
 }
 
 .about__wrapper__blocks {
   display: flex;
   justify-content: space-around;
-  min-width: 540px;
+  flex-direction: column;
 
-  @media screen and (max-width: 559.98px) {
-    flex-direction: column;
+  @media screen and (min-width: 559.98px) {
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    min-width: 0;
+    justify-content: space-evenly;
     margin: 0 auto;
   }
 }
 
-.about__stack__block,
+.about__stack__block {
+
+  width: 90%;
+  align-items: flex-start;
+  justify-content: start;
+  display: flex;
+  flex-direction: column;
+  height: 440px;
+  margin: 0 12px;
+  overflow: hidden;
+
+}
+
 .about__years__block {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 230px;
+  align-items: flex-end;
+  justify-content: end;
+  width: 90%;
   height: 440px;
+  margin: 0 12px;
   overflow: hidden;
 }
 
-@media screen and (max-width: 559.98px) {
+@media screen and (min-width: 559.98px) {
   .about__stack__block {
-    width: 90%;
-    align-items: flex-start;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
   }
 
   .about__years__block {
-    width: 90%;
-    align-items: flex-end;
-    justify-content: end;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
   }
 }
 
@@ -98,15 +112,6 @@
   color: #111214;
 }
 
-@media screen and (max-width: 559.98px) {
-  .title__years {
-    justify-content: end;
-  }
-
-  .title__stack {
-    margin: 31px 0;
-  }
-}
 
 .count {
   color: #fe390c;
@@ -125,7 +130,7 @@
   height: 284.21px;
   display: flex;
   align-items: flex-start;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .about__hero__text {
@@ -140,6 +145,7 @@
   letter-spacing: -0.02em;
   color: #a9a9aa;
   margin-top: 29px;
+
 
 }
 
@@ -169,9 +175,9 @@ span {
   letter-spacing: -0.02em;
   color: #A9A9AA;
 
-  @media screen and (max-width: 767.98px) {
+  /* @media screen and (max-width: 767.98px) {
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
-  }
+  } */
 }
