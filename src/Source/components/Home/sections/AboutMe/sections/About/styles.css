@@ -42,7 +42,6 @@
 }
 
 .about__stack__block {
-
   width: 90%;
   align-items: flex-start;
   justify-content: start;
@@ -51,7 +50,6 @@
   height: 440px;
   margin: 0 12px;
   overflow: hidden;
-
 }
 
 .about__years__block {
@@ -112,7 +110,6 @@
   color: #111214;
 }
 
-
 .count {
   color: #fe390c;
   letter-spacing: 0.02em;
@@ -145,8 +142,6 @@
   letter-spacing: -0.02em;
   color: #a9a9aa;
   margin-top: 29px;
-
-
 }
 
 .about__hero__title {
@@ -161,19 +156,17 @@
   text-transform: uppercase;
   color: #111214;
   margin-bottom: 29px;
-
 }
-
 
 span {
   width: 100%;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 32px;
   letter-spacing: -0.02em;
-  color: #A9A9AA;
+  color: #a9a9aa;
 
   /* @media screen and (max-width: 767.98px) {
     font-weight: 400;

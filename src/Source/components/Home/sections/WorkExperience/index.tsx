@@ -1,7 +1,6 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { data } from "./ExperienceData";
 import { Card } from "../../../Card";
-
 import "./styles.css";
 
 export const WorkExperience: FC = () => {

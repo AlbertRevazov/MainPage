@@ -1,8 +1,8 @@
-import React from "react";
-import "./styles.css";
+import { FC } from "react";
 import { Links } from "../../../Links";
+import "./styles.css";
 
-export const Welcome = () => {
+export const Welcome: FC = () => {
   return (
     <div className="container">
       <div className="wrapper__container">

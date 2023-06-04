@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { Welcome } from "./sections/Welcome";
 import { AboutMe } from "./sections/AboutMe";
 import { Service } from "./sections/Service";

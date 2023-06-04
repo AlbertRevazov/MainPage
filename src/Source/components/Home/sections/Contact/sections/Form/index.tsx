@@ -1,7 +1,5 @@
-import React, { FC, useEffect } from "react";
+import { FC } from "react";
 import { useFormHook } from "./hooks";
-import { toast } from "react-toastify";
-
 import "react-toastify/dist/ReactToastify.css";
 import "./styles.css";
 
@@ -13,7 +11,7 @@ export const Form: FC = () => {
     <div className="contact__email">
       <div className="contact__email__wrapper">
         <div className="contact__email__title">
-          I’m always open to discussing <h3> product design work </h3> or
+          I’m always open to discussing <h3> product develop work </h3> or
           partnership
         </div>
         <form id="Email" onSubmit={handleSubmit}>

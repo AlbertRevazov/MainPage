@@ -1,7 +1,7 @@
-import React, { FC } from "react";
-import "./styles.css";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import { FC } from "react";
 import { MenuBurger } from "./MenuBurger";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import "./styles.css";
 
 export const Navbar: FC = () => {
   const isMobile = useMediaQuery("(max-width:767.98px)");

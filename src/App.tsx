@@ -1,9 +1,9 @@
-import React, { FC } from "react";
-import "./App.css";
-import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
+import { FC } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Layout } from "./Source/components/Layout";
 import { HomePage } from "./Source/components/Home";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
+import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
 
 export const App: FC = () => {

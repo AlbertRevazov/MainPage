@@ -1,9 +1,10 @@
-import React, { FC } from "react";
-import "./styles.css";
+import { FC } from "react";
 import { Card } from "../../../Card";
+import "./styles.css";
 
 export const Service: FC = () => {
   return (
+    // todo render card with map
     <div id="service" className="service__container">
       <div className="service__wrapper">
         <div className="service__title">

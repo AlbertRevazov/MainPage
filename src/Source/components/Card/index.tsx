@@ -1,7 +1,6 @@
-import React, { FC } from "react";
-import "./styles.css";
+import { FC } from "react";
 import { Icon } from "../Icon";
-import { log } from "console";
+import "./styles.css";
 
 interface CardProps {
   title: string;
@@ -33,7 +32,7 @@ export const Card: FC<CardProps> = ({
           <div className="card__description">{description}</div>
         </div>
       ) : (
-        <div className="work__experience__wrapper">
+        <a className="work__experience__wrapper" onClick={() => {}}>
           <Icon
             className="work__experience__image"
             src={src}
@@ -52,7 +51,7 @@ export const Card: FC<CardProps> = ({
               ))}
             </h4>
           </div>
-        </div>
+        </a>
       )}
     </>
   );

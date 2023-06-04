@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import { send } from "emailjs-com";
 import { toast } from "react-toastify";
 
@@ -31,7 +31,6 @@ export const useFormHook = () => {
       toast.error("Sending error");
     }
   };
-
 
   return { handleSubmit, handleChange, handleTextAreaChange, toSend };
 };

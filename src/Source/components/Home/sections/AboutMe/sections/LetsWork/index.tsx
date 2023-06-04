@@ -1,6 +1,6 @@
-import React, { FC } from "react";
-import "./styles.css";
+import { FC } from "react";
 import { Icon } from "../../../../../Icon";
+import "./styles.css";
 
 export const LetsWork: FC = () => {
   return (

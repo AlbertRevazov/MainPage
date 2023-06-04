@@ -84,7 +84,7 @@
     overflow: hidden;
     border-radius: 8px;
     margin: 12px;
-    cursor: default;
+    cursor: pointer;
 
     @media (min-width: 499.98px) {
         width: 364px;

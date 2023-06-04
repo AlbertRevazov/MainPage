@@ -1,5 +1,6 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import "./styles.css";
+
 export const AboutBlock: FC = () => {
   return (
     <div className="about__container">

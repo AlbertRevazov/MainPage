@@ -1,6 +1,6 @@
-import React, { FC, ReactNode } from "react";
-import "./styles.css";
+import { FC, ReactNode } from "react";
 import { Navbar } from "../Nav";
+import "./styles.css";
 
 type LayoutProps = {
   children: ReactNode;
