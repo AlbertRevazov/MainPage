@@ -19,8 +19,8 @@ export const Welcome = () => {
           <h3 className="header__subtitle"> Frontend Developer</h3>,
         </div>
         <div className={"hero__links-wrapper"}>
+          <Links className="social__media" />
           <img className={"hero__image"} src="/img/abe.png" alt="pic" />
-          <Links />
         </div>
       </div>
       <img className={"hero__bg"} src="/img/bg.png" alt="bg" />

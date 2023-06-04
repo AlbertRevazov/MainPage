@@ -15,14 +15,14 @@ export const Contacts: FC = () => {
           <Icon src="/img/icons/phone.png" alt="icon" width={19} height={19} />
           <div className="contact__item">
             <h4 className="title">Phone</h4>
-            <h6 className="subtitle">24332432432</h6>
+            <h6 className="subtitle">+7 (989) 134-34-54</h6>
           </div>
         </div>
         <div className="contact__item__wrapper">
           <Icon src="/img/icons/email.png" alt="icon" width={19} height={19} />
           <div className="contact__item">
             <h4 className="title">Email</h4>
-            <h6 className="subtitle">robertfox@example.com</h6>
+            <h6 className="subtitle">alber.revazov@bk.ru</h6>
           </div>
         </div>
         <div className="contact__item__wrapper">
@@ -35,7 +35,7 @@ export const Contacts: FC = () => {
           <div className="contact__item">
             <h4 className="title">Address</h4>
             <h6 className="subtitle">
-              4517 Washington Ave. Manchester, Kentucky 39495
+              Russia, North Ossetia-Alania, Archonskaya, Ogorodnaya Street,
             </h6>
           </div>
         </div>
