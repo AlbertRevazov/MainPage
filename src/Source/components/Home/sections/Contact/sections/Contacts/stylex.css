@@ -1,10 +1,10 @@
 .contact__info__wrapper {
     display: flex;
     flex-direction: column;
-    margin: 50px 0 auto;
+    margin-top: 10px;
 
-    @media (max-width:1099.98px) {
-        margin-top: 10px;
+    @media (min-width:767.98px) {
+        margin: 50px 0 auto;
     }
 }
 
@@ -73,8 +73,8 @@
 .contact__info__links {
     display: flex;
     justify-content: start;
-    align-items: center;
-    margin: 0 0 auto;
+    align-items: start;
+    margin: 0;
 }
 
 .contact__info__links .link__item:first-child {
@@ -83,4 +83,5 @@
 
 .contact__info__links .link__item {
     margin: 10px;
+    left: 0;
 }
