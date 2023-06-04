@@ -18,7 +18,3 @@
 .link__item:hover {
   filter: brightness(1);
 }
-
-.social__media {
-  z-index: 909;
-}

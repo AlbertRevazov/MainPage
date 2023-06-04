@@ -1,158 +1,171 @@
 .service__title {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: -0.04em;
-    color: #111214;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  color: #111214;
 }
 
 .service__cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .card__wrapper {
-    width: 100%;
-    height: 260.06px;
-    margin: 12px 12px;
-    background: #f7f7f7;
-    padding: 22px;
+  width: 100%;
+  height: 260.06px;
+  margin: 12px 12px;
+  background: #f7f7f7;
+  padding: 22px;
 
-    @media (min-width: 539.98px) {
-        width: 230px;
-    }
+  @media (min-width: 539.98px) {
+    width: 230px;
+  }
 }
 
 @media (min-width: 539.98px) {
-    .card__wrapper:hover {
-        background-color: #fe390c;
-        transition: all 0.3s ease-in;
-        border-radius: 8px;
-        cursor: pointer;
+  .card__wrapper:hover {
+    background-color: #fe390c;
+    transition: all 0.3s ease-in;
+    border-radius: 8px;
+    cursor: pointer;
 
-        .card__title {
-            color: #ffffff;
-        }
-
-        .card__description {
-            color: #ffffff;
-        }
+    .card__title {
+      color: #ffffff;
     }
+
+    .card__description {
+      color: #ffffff;
+    }
+  }
+}
+.card__wrapper:hover {
+  background-color: #fe390c;
+  transition: background-color 0.3s ease-in;
+  border-radius: 8px;
+  cursor: pointer;
+
+  .card__title {
+    color: #ffffff;
+  }
+
+  .card__description {
+    color: #ffffff;
+  }
 }
 
-
 .card__icon {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin: 21px auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 21px auto;
 }
 
 .card__title {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: -0.04em;
-    color: #111214;
-    transition: color 0.3s ease-in;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  color: #111214;
+  transition: color 0.3s ease-in;
 }
 
 .card__description {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: -0.02em;
-    color: #a9a9aa;
-    transition: color 0.3s ease-in;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #a9a9aa;
+  transition: color 0.3s ease-in;
 }
 
 .work__experience__wrapper {
-    display: flex;
-    position: relative;
-    top: 0;
-    left: 0;
-    min-width: 290px;
-    height: 250px;
-    overflow: hidden;
-    border-radius: 8px;
-    margin: 12px;
-    cursor: pointer;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  min-width: 290px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 12px;
+  cursor: pointer;
 
-    @media (min-width: 499.98px) {
-        width: 364px;
-    }
+  @media (min-width: 499.98px) {
+    width: 364px;
+  }
 }
 
 .work__experience__wrapper .work__experience__image {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
 }
 
 .work__experience__wrapper .work__experience__icon__text {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.59);
-    top: 0;
-    left: 100%;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 15px;
-    transition: 0.5s;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.59);
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  transition: 0.5s;
 }
 
 .work__experience__wrapper .work__experience__image img {
-    width: 100%;
+  width: 100%;
 }
 
 .work__experience__icon__text h2 {
-    font-family: "Anton";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: capitalize;
-    text-align: center;
-    color: #ffffff;
-    border-bottom: 1.4px solid #fe390c;
-    cursor: default;
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 1.4px solid #fe390c;
+  cursor: default;
 }
 
 .work__experience__icon__text h4 {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
 
-    letter-spacing: -0.04em;
-    color: #ffffff;
-    cursor: default;
-    text-align: left;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  cursor: default;
+  text-align: left;
 
-    @media (min-width: 559.98px) {
-        font-size: 12px;
-        line-height: 20px;
-    }
+  @media (min-width: 559.98px) {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
 
 .work__experience__wrapper:hover {
-    .work__experience__icon__text {
-        top: 0;
-        left: 0;
-    }
+  .work__experience__icon__text {
+    top: 0;
+    left: 0;
+  }
 }

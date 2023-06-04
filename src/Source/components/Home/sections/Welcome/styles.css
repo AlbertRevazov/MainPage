@@ -96,17 +96,24 @@
   z-index: 2;
   position: relative;
   top: 0;
-  left: -120px;
+  left: 0;
 
   @media (min-width: 767.98px) {
-    left: -200px;
+    left: 0;
   }
+}
+
+.social__media {
+  z-index: 909;
+  position: relative;
+  top: 0px;
+  left: -200px;
 }
 
 .line {
   position: relative;
   top: 0;
-  left: -20px;
+  left: -25px;
   border: 1.5px solid #f7f5f5;
   transform: rotate(90deg);
   width: 58px;
