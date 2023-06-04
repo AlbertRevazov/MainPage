@@ -8,7 +8,7 @@ export const AboutBlock: FC = () => {
         <div className="about__wrapper__blocks">
           <div className="about__years__block">
             <img
-              src="/img/years.jpg"
+              src="/img/ave.jpg"
               alt=""
               className="years__image image image-zoom"
             />
@@ -20,7 +20,7 @@ export const AboutBlock: FC = () => {
             <div className="title__stack">
               <h3 className={"count"}>2</h3>Year of experience
             </div>
-            <img src="/img/stack.png" alt="" className="image " />
+            <img src="/img/rew.jpg" alt="" className="image " />
           </div>
         </div>
 
