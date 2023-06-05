@@ -22,6 +22,7 @@ export const Form: FC = () => {
                 id="name"
                 type="text"
                 name="name"
+                autoComplete="off"
                 value={toSend.name}
                 onChange={handleChange}
                 className="contact__input"
@@ -33,6 +34,7 @@ export const Form: FC = () => {
               <input
                 id="email"
                 type="text"
+                autoComplete="off"
                 name="email"
                 value={toSend.email}
                 onChange={handleChange}
@@ -46,6 +48,7 @@ export const Form: FC = () => {
             <textarea
               className="contact__message"
               name="message"
+              autoComplete="off"
               value={toSend.message}
               onChange={handleTextAreaChange}
             />

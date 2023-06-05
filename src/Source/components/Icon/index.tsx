@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 interface IconProps {
-  src: string;
+  src: string | undefined;
   alt: string;
   className?: string;
   width?: number;

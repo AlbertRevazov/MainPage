@@ -1,10 +1,10 @@
 import { FC } from "react";
 import { Card } from "../../../Card";
+import { data } from "./ServiceData";
 import "./styles.css";
 
 export const Service: FC = () => {
   return (
-    // todo render card with map
     <div id="service" className="service__container">
       <div className="service__wrapper">
         <div className="service__title">
@@ -12,46 +12,18 @@ export const Service: FC = () => {
           <h4>My Service</h4>
         </div>
         <div className="service__cards">
-          <Card
-            src="/img/icons/github.png"
-            alt=""
-            description={`Amet minim mollit non deserunt 
-            ullamco est sit aliqua dolor do amet sint.
-             Vuis enim velit ullamco`}
-            title="UI/UX Design"
-            width={28}
-            height={28}
-          />
-          <Card
-            src="/img/icons/github.png"
-            alt=""
-            description={`Amet minim mollit non deserunt 
-            ullamco est sit aliqua dolor do amet sint.
-             Vuis enim velit ullamco`}
-            title="Product Design"
-            width={28}
-            height={28}
-          />
-          <Card
-            src="/img/icons/github.png"
-            alt=""
-            description={`Amet minim mollit non deserunt 
-            ullamco est sit aliqua dolor do amet sint.
-             Vuis enim velit ullamco`}
-            title="Brand Identity"
-            width={28}
-            height={28}
-          />
-          <Card
-            src="/img/icons/github.png"
-            alt=""
-            description={`Amet minim mollit non deserunt 
-            ullamco est sit aliqua dolor do amet sint.
-             Vuis enim velit ullamco`}
-            title="Website Design"
-            width={28}
-            height={28}
-          />
+          {data.map((item) => (
+            <Card
+              key={item.title}
+              src={item.src}
+              srcLight={item.srcLight}
+              alt=""
+              description={item.description}
+              title={item.title}
+              width={item.width}
+              height={item.height}
+            />
+          ))}
         </div>
       </div>
     </div>
