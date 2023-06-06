@@ -87,14 +87,8 @@ footer {
   margin-top: 0;
 
   @media (min-width: 767.98px) {
-    top: 90px;
+    top: 140px;
   }
-
-  @media (min-width: 1099.98px) {
-    top: 50px;
-    margin: 40px auto;
-  }
-
 
 }
 
