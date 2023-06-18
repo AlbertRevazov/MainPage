@@ -3,11 +3,11 @@ export const data = [
     id: 1,
     description: `
     Fullstack (Frontend) JavaScript Developer.
-    - Engaged in custom development of web applications in teams.
-    - Worked out the architecture and logic of the application.
-    - Designed databases, set up connections.
-    - I was engaged in the organization of Redux storage.
-    - Set up the back-end on Node.js: authorization, sessions, middleware.`,
+    - Development of client-server applications from scratch.
+    - Formation of databases.
+    - Development of user interfaces.
+    - Optimization of the application, participation in team development.
+    - Introduction of new technologies and practices.`,
     src: "/img/o2.jpg",
     title: "Web Studio O2",
     width: 360,
@@ -16,12 +16,13 @@ export const data = [
   {
     id: 2,
     description: `
-    Frontend-developer
-    - Developed the front part of personal cabinets
-    - Worked with application architecture, work with Yandex maps.
-    - Interaction with related departments.
-    - Development of client-side interfaces on React.
-    - Support for existing code, refactoring.`,
+    Frontend Developer
+    - Development of the client part of the main website personal account.
+    - Support and refactoring of the existing code base,
+    their refinement and optimization.
+    - Development of web interfaces of varying complexity
+    , taking into account UI/UX.
+    - Cross-browser and adaptive layout.`,
     src: "/img/maximum.jpg",
     title: "Maximum",
     width: 360,

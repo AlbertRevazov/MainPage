@@ -18,7 +18,7 @@ export const AboutBlock: FC = () => {
           </div>
           <div className="about__stack__block">
             <div className="title__stack">
-              <h3 className={"count"}>2</h3>Year of experience
+              <h3 className={"count"}>+2</h3>Year of experience
             </div>
             <img src="/img/rew.jpg" alt="" className="image" />
           </div>
