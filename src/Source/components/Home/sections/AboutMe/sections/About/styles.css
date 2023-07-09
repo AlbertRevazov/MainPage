@@ -161,13 +161,21 @@
   margin-bottom: 29px;
 }
 
-span {
-  width: 100%;
+.about__span {
+  width: 150%;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 18px;
   letter-spacing: -0.02em;
   color: #a9a9aa;
+  position: relative;
+  top: 0;
+  left: -80px;
+
+  @media (min-width: 500px) {
+    position: static;
+    line-height: 32px;
+  }
 }

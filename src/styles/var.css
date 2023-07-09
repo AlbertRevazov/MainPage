@@ -1,19 +1,25 @@
 :root {
-  --background: #f8f7f7;
+  --background: #e9e8e8;
   --background-image-block-bg: url("/public/img/block_light_bg.jpeg");
+  --background--trusted: #ededed;
   --background--card: #ededed;
   --background--hover: #f8461e;
+  --button-hover: #ffffff;
   --filter--brightness: 100%;
 
   --text-primary: #000000;
+  --text-hover: #fcfafa;
 }
 
 [data-theme="dark"] {
   --background: #05010a;
   --background-image-block-bg: url("/public/img/block-bg.jpg");
-  --background--card: #f8461e;
-  --background--hover: #e78e8e;
+  --background--trusted: #f8461e;
+  --background--card: #4342426d;
+  --background--hover: #f2eded;
   --filter--brightness: 200%;
+  --button-hover: #f8461e;
 
   --text-primary: #fbfbfb;
+  --text-hover: #000000;
 }

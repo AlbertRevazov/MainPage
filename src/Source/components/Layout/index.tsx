@@ -21,7 +21,7 @@ export const Layout: FC<LayoutProps> = ({ children }) => {
           </div>
           {!isMobile && (
             <div className="layout__button">
-              <a href="#contact" className="button button_blue">
+              <a href="#contact" className="button">
                 CONTACT
               </a>
             </div>

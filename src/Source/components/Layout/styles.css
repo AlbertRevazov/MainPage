@@ -59,16 +59,17 @@
   font-size: 10px;
   line-height: 1.2;
   letter-spacing: 1px;
-  color: #fe390c;
+  color: var(--text-primary);
   padding: 14px 30px;
   border-radius: 5px;
-  border: 1px solid #fe390c;
+  border: 1px solid var(--text-primary);
   transition: all 0.3s ease 0s;
 }
 
 .button:hover {
-  border: 1px solid #fcfcfb;
-  color: #fcfcfb;
+  border: 1px solid var(--button-hover);
+  background-color: #f8461e;
+  color: #ffffff;
 }
 
 .icon-menu {

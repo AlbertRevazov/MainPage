@@ -20,16 +20,17 @@
   }
 }
 
-.card__wrapper:hover {
-  background-color: var(--background--hover);
-  transition: all 0.3s ease-in;
-  cursor: pointer;
+@media (min-width: 767.98px) {
+  .card__wrapper:hover {
+    background-color: var(--background--hover);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
 
-  .card__title,
-  .card__description {
-    color: #ffffff;
+    .card__title,
+    .card__description {
+      color: var(--text-hover);
+    }
   }
-
 }
 
 .card__icon {
@@ -47,6 +48,7 @@
   line-height: 30px;
   letter-spacing: -0.04em;
   color: var(--text-primary);
+  cursor: default;
   transition: color 0.3s ease-in;
 }
 
@@ -59,6 +61,7 @@
   letter-spacing: -0.02em;
   color: #a9a9aa;
   transition: color 0.3s ease-in;
+  cursor: default;
 }
 
 .work__experience__wrapper {
