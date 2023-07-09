@@ -1,0 +1,19 @@
+:root {
+  --background: #f8f7f7;
+  --background-image-block-bg: url("/public/img/block_light_bg.jpeg");
+  --background--card: #ededed;
+  --background--hover: #f8461e;
+  --filter--brightness: 100%;
+
+  --text-primary: #000000;
+}
+
+[data-theme="dark"] {
+  --background: #05010a;
+  --background-image-block-bg: url("/public/img/block-bg.jpg");
+  --background--card: #f8461e;
+  --background--hover: #e78e8e;
+  --filter--brightness: 200%;
+
+  --text-primary: #fbfbfb;
+}

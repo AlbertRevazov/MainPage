@@ -1,5 +1,6 @@
 import { FC, ReactNode } from "react";
 import { Navbar } from "../Nav";
+import { useMediaQuery } from "@mui/material";
 import "./styles.css";
 
 type LayoutProps = {
@@ -7,6 +8,7 @@ type LayoutProps = {
 };
 
 export const Layout: FC<LayoutProps> = ({ children }) => {
+  const isMobile = useMediaQuery("(max-width:850.98px)");
   return (
     <div className="wrapper">
       <header className="layout__nav">
@@ -17,11 +19,13 @@ export const Layout: FC<LayoutProps> = ({ children }) => {
           <div className="layout__menu menu">
             <Navbar />
           </div>
-          <div className="layout__button">
-            <a href="#contact" className="button button_blue">
-              CONTACT
-            </a>
-          </div>
+          {!isMobile && (
+            <div className="layout__button">
+              <a href="#contact" className="button button_blue">
+                CONTACT
+              </a>
+            </div>
+          )}
         </div>
       </header>
       {children}

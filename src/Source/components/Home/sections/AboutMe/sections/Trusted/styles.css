@@ -1,5 +1,5 @@
 .trusted {
-  background-color: #f7f7f7;
+  background-color: var(--background--card);
   position: relative;
   top: 270px;
   left: 0px;
@@ -20,12 +20,6 @@
 }
 
 .trust__item {
-  color: #a7aab4;
   margin: 0 auto;
-}
-
-.trust__github {
-  width: 30px;
-  height: 30px;
-  color: red;
+  filter: brightness(var(--filter--brightness));
 }

@@ -1,5 +1,4 @@
 import { FC } from "react";
-
 interface IconProps {
   src: string | undefined;
   alt: string;

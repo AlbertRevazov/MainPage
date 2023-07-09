@@ -1,5 +1,6 @@
+@import '../../../../../../../styles/var.css';
+
 .work__container {
-  background-color: #111214;
   border-radius: 6px;
   position: relative;
   left: 0px;

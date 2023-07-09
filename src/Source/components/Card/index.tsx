@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { Icon } from "../Icon";
 import { CardProps, useHookCards } from "./hooks";
-import "./styles.css";
 import { useMediaQuery } from "@mui/material";
+import "./styles.css";
 
 export const Card: FC<CardProps> = ({
   title,
@@ -10,14 +10,11 @@ export const Card: FC<CardProps> = ({
   alt,
   height,
   src,
-  srcLight,
   width,
   isWork,
 }) => {
   const { handleMouseEnter, handleMouseLeave, isHover, hoverStyle } =
     useHookCards();
-
-  const isMobile = useMediaQuery("(max-width:767.98px)");
   return (
     <>
       {!isWork ? (
@@ -27,12 +24,7 @@ export const Card: FC<CardProps> = ({
           onMouseLeave={handleMouseLeave}
         >
           <div className="card__icon">
-            <Icon
-              src={!isMobile ? (isHover ? srcLight : src) : src}
-              alt={alt}
-              width={width}
-              height={height}
-            />
+            <Icon src={src} alt={alt} width={width} height={height} />
           </div>
           <div className="card__title">{title}</div>
           <div className="card__description">{description}</div>

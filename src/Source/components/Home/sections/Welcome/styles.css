@@ -1,3 +1,9 @@
+@import "../../../../../styles/var.css";
+
+body {
+  background-color: var(--background);
+}
+
 .container {
   position: relative;
   display: flex;
@@ -8,7 +14,7 @@
   left: 0px;
   top: 114px;
   overflow: hidden;
-  background-image: url("/public/img/block-bg.jpg");
+  background-image: var(--background-image-block-bg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
@@ -77,6 +83,10 @@
   }
 }
 
+.hero__bio h1 {
+  min-width: 180px;
+}
+
 .hero__links-wrapper {
   display: flex;
   justify-content: flex-end;
@@ -106,8 +116,23 @@
 .social__media {
   z-index: 909;
   position: relative;
-  top: 0px;
-  left: -200px;
+  top: 150px;
+  left: -520px;
+  display: flex;
+
+  @media (min-width: 399.98px) {
+    top: 0px;
+    left: -200px;
+    flex-direction: column;
+  }
+}
+
+.social__media a {
+  margin: 17px;
+
+  @media (min-width: 399.98px) {
+    margin: 28px;
+  }
 }
 
 .line {

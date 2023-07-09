@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Links } from "../../../Links";
-import "./styles.css";
 import { Icon } from "../../../Icon";
+import "./styles.css";
 
 export const Welcome: FC = () => {
   return (
@@ -22,9 +22,9 @@ export const Welcome: FC = () => {
         <div className={"hero__links-wrapper"}>
           <Icon className={"hero__image"} src="/img/abe.png" alt="pic" />
         </div>
-          <Links className="social__media" />
+        <Links className="social__media" />
       </div>
-      <img className={"hero__bg"} src="/img/welcome_bg.png" alt="" />
+      <img className={"hero__bg"} src="/img/welcome_bg.png" alt="welcome_bg" />
     </div>
   );
 };

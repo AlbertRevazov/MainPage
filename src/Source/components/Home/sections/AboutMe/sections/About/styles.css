@@ -1,3 +1,5 @@
+@import "../../../../../../../styles/var.css";
+
 .about__container {
   position: relative;
   left: 0px;
@@ -108,7 +110,7 @@
   line-height: 20px;
   margin: 31px 0 31px 0;
   letter-spacing: -0.04em;
-  color: #111214;
+  color: var(--text-primary);
 }
 
 .count {
@@ -155,7 +157,7 @@
   align-items: center;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #111214;
+  color: var(--text-primary);
   margin-bottom: 29px;
 }
 
@@ -168,10 +170,4 @@ span {
   line-height: 32px;
   letter-spacing: -0.02em;
   color: #a9a9aa;
-
-  /* @media screen and (max-width: 767.98px) {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-  } */
 }
