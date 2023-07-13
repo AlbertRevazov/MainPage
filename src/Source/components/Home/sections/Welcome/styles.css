@@ -4,7 +4,7 @@ body {
   background-color: var(--background);
 }
 
-.container {
+.welcome {
   position: relative;
   display: flex;
   justify-content: start;

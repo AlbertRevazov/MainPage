@@ -1,0 +1,82 @@
+@import "../../../../../styles/var.css";
+
+.password__container {
+  position: relative;
+  left: 0px;
+  top: 114px;
+}
+
+.title {
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin: 10px 0 auto;
+  text-align: end;
+}
+
+.title span {
+  color: red;
+}
+
+.description {
+  color: #a9a9aa;
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.pass__box {
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 30px 0;
+  border: 1px solid var(--text-primary);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.passInput {
+  text-transform: uppercase;
+}
+
+.passInput,
+.add__input {
+  width: 250px;
+  height: 48px;
+  border-radius: 10px;
+  font-family: "Anton";
+  font-style: normal;
+  font-size: 20px;
+  text-align: start;
+  padding: 0 20px;
+  margin: 0 20px;
+  color: var(--text-primary);
+  background-color: var(--background);
+  border: 1px solid var(--text-primary);
+}
+
+.passInput::placeholder,
+.add__input::placeholder {
+  font-family: "Anton";
+  font-style: normal;
+  color: red;
+  font-size: 17px;
+}
+
+.button {
+  background-color: var(--background);
+  color: var(--text-primary);
+}

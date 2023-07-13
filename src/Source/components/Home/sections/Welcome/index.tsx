@@ -5,7 +5,7 @@ import "./styles.css";
 
 export const Welcome: FC = () => {
   return (
-    <div className="container">
+    <div className="welcome container">
       <div className="wrapper__container">
         <div className="hello">
           <h2 className="header__title">
