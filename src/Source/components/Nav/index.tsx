@@ -6,6 +6,7 @@ import "./styles.css";
 
 export const Navbar: FC = () => {
   const isMobile = useMediaQuery("(max-width:767.98px)");
+  const isHome = window.location.pathname === "/";
   return (
     <>
       {!isMobile ? (
@@ -13,9 +14,15 @@ export const Navbar: FC = () => {
           <nav id="menu" className="menu__body">
             <ul className="menu__list">
               <li className="menu__item">
-                <a href="/" className="menu__link">
-                  HOME
-                </a>
+                {isHome ? (
+                  <a href="/apps" className="menu__link">
+                    Mini-Apps
+                  </a>
+                ) : (
+                  <a href="/" className="menu__link">
+                    HOME
+                  </a>
+                )}
               </li>
               <li className="menu__item">
                 <a href="#about" className="menu__link">

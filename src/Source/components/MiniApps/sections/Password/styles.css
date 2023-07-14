@@ -1,0 +1,128 @@
+@import "../../../../../styles/var.css";
+
+.loader {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+}
+
+.password__container {
+  width: 100%;
+  padding: 40px;
+}
+.password__root {
+  position: relative;
+  left: 0px;
+  top: 115px;
+  height: 700px;
+  background-color: rgba(123, 116, 116, 0.462);
+}
+.title {
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin: 10px 0 auto;
+  text-align: end;
+}
+
+.title span {
+  color: red;
+}
+
+.description span {
+  color: #f8461e;
+  margin: 0 4px;
+}
+
+.description {
+  color: var(--color-primary);
+  font-family: "Antonio";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.pass__box {
+  box-sizing: border-box;
+  padding: 40px;
+  margin: 30px 0;
+  border-radius: 14px;
+  border: 1px solid rgba(128, 128, 128, 0.452);
+  background-color: var(--background--card);
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 50px 38px 48px -22px rgba(122, 122, 122, 0.46);
+  -moz-box-shadow: 50px 38px 48px -22px rgba(122, 122, 122, 0.46);
+  box-shadow: 50px 38px 48px -22px rgba(122, 122, 122, 0.46);
+}
+
+.disabled__button {
+  background-color: var(--background);
+  color: gray;
+  border: 1px solid gray;
+}
+
+.copied {
+  background-color: rgb(117, 200, 117);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.button__small {
+  background-color: #00000000;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+.button__small:hover {
+  background-color: var(--button-hover);
+  color: #fbfbfb;
+}
+
+.button__wrapper {
+  padding-right: 40px;
+}
+
+.button__generate {
+  background-color: var(--background);
+  color: var(--color-primary);
+  font-size: 18px;
+  margin: 20px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.button__small:active,
+.button__generate:active {
+  transform: scale(0.97);
+}
+
+.button__small,
+.disabled__button,
+.copied {
+  margin: 20px;
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in,
+    transform 0.2s linear;
+  cursor: pointer;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  @media (min-width: 767.98px) {
+    width: 20%;
+  }
+}

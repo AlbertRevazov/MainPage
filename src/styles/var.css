@@ -4,11 +4,15 @@
   --background--trusted: #ededed;
   --background--card: #ededed;
   --background--hover: #f8461e;
-  --button-hover: #ffffff;
+  --button-hover: #f8461e;
   --filter--brightness: 100%;
 
-  --text-primary: #000000;
-  --text-hover: #fcfafa;
+  --color-primary: #000000;
+  --color-hover: #fcfafa;
+
+  --webkit-shadow: #000000;
+  --moz-shadow: #000000;
+  --box-shadow: #000000;
 }
 
 [data-theme="dark"] {
@@ -20,6 +24,10 @@
   --filter--brightness: 200%;
   --button-hover: #f8461e;
 
-  --text-primary: #fbfbfb;
-  --text-hover: #000000;
+  --color-primary: #fbfbfb;
+  --color-hover: #000000;
+
+  --webkit-shadow: #fbfbfb;
+  --moz-shadow: #fbfbfb;
+  --box-shadow: #fbfbfb;
 }

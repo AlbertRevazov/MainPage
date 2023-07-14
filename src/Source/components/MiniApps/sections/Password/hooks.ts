@@ -2,9 +2,9 @@ import { useState } from "react";
 
 export const usePasswordGenerateHook = () => {
   // Переменные для создания пароля и для определения его длины
-  let chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDFGHIJKLMNOPQRSTUVWXYZ";
+  let chars = "0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
   const symbols = "!@#$()_?.;:";
-  const passwordlengthValues = ['8', '9', '10', '11', '12'];
+  const passwordlengthValues = ["8", "9", "10", "11", "12"];
 
   // Создаём состояния
   const [result, setResult] = useState("");
@@ -14,7 +14,6 @@ export const usePasswordGenerateHook = () => {
   const [box, setBox] = useState(false);
   const [copied, setCopied] = useState(false);
   const [animated, setAnimated] = useState(false);
-
   // Записываем текущую длину пароля
   const handleChangeLength: React.FocusEventHandler<HTMLSelectElement> = (
     event
@@ -109,14 +108,13 @@ export const usePasswordGenerateHook = () => {
     handleChangeLength,
     animationhandler,
     copyHandler,
-    handlePasswordGenerate,
+    animated,
+    userInput,
     userInputhandler,
     handleUserInput,
-    boxHandler,
-    userInputStatus,
-    userInput,
     result,
     copied,
     passwordlengthValues,
+    boxHandler,
   };
 };
