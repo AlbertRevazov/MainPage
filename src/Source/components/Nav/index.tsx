@@ -13,32 +13,36 @@ export const Navbar: FC = () => {
         <div style={{ display: "flex", alignItems: "center" }}>
           <nav id="menu" className="menu__body">
             <ul className="menu__list">
-              <li className="menu__item">
-                {isHome ? (
-                  <a href="/apps" className="menu__link">
-                    Mini-Apps
-                  </a>
-                ) : (
+              {isHome ? (
+                <>
+                  <li className="menu__item">
+                    <a href="/apps" className="menu__link">
+                      Mini-Apps
+                    </a>
+                  </li>
+                  <li className="menu__item">
+                    <a href="#about" className="menu__link">
+                      ABOUT
+                    </a>
+                  </li>
+                  <li className="menu__item">
+                    <a href="#service" className="menu__link">
+                      SERVICE
+                    </a>
+                  </li>
+                  <li className="menu__item">
+                    <a href="#experience" className="menu__link">
+                      Work Experience
+                    </a>
+                  </li>
+                </>
+              ) : (
+                <li className="menu__item">
                   <a href="/" className="menu__link">
                     HOME
                   </a>
-                )}
-              </li>
-              <li className="menu__item">
-                <a href="#about" className="menu__link">
-                  ABOUT
-                </a>
-              </li>
-              <li className="menu__item">
-                <a href="#service" className="menu__link">
-                  SERVICE
-                </a>
-              </li>
-              <li className="menu__item">
-                <a href="#experience" className="menu__link">
-                  Work Experience
-                </a>
-              </li>
+                </li>
+              )}
             </ul>
           </nav>
           <Switcher />

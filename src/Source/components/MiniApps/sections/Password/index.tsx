@@ -1,8 +1,9 @@
-import React, { FC } from "react";
+import React, { FC, useRef } from "react";
 import { usePasswordGenerateHook } from "./hooks";
 import { Inputs } from "./sections/Inputs";
 import "./styles.css";
 import { CheckboxSelect } from "./sections/CheckboxSelect";
+import { Parallax } from "../../../../../Utils/Parallax";
 
 export const Password: FC = () => {
   const {
@@ -18,10 +19,15 @@ export const Password: FC = () => {
     boxHandler,
   } = usePasswordGenerateHook();
 
+  const element = useRef(null);
+  Parallax(element);
   return (
-    <div className="password__root">
+    <>
+      <div className="password__root">
+        <div className="mouse-parallax-bg" ref={element} />
+      </div>
       <div className="password__container">
-        <h2 className="title">
+        <h2 className="password__title">
           <span> 01</span> Password Generate
         </h2>
 
@@ -56,6 +62,6 @@ export const Password: FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };

@@ -1,6 +1,7 @@
 :root {
   --background: #e9e8e8;
   --background-image-block-bg: url("/public/img/block_light_bg.jpeg");
+  --background-password-bg: url("/public/img/pass_bg_light.jpg");
   --background--trusted: #ededed;
   --background--card: #ededed;
   --background--hover: #f8461e;
@@ -18,6 +19,7 @@
 [data-theme="dark"] {
   --background: #05010a;
   --background-image-block-bg: url("/public/img/block-bg.jpg");
+  --background-password-bg: url("/public/img/pass_bg.jpg");
   --background--trusted: #f8461e;
   --background--card: #4342426d;
   --background--hover: #f2eded;

@@ -7,18 +7,48 @@
   margin: 0;
 }
 
+.password__root {
+  height: 80vh;
+
+  background-color: rgba(123, 116, 116, 0.462);
+  position: relative;
+  overflow: hidden;
+  left: 0px;
+  top: 114px;
+  z-index: 2;
+
+  @media (min-width: 767.98px) {
+    height: 60vh;
+  }
+}
+
 .password__container {
   width: 100%;
   padding: 40px;
-}
-.password__root {
-  position: relative;
-  left: 0px;
+  position: absolute;
   top: 115px;
-  height: 700px;
-  background-color: rgba(123, 116, 116, 0.462);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 2;
 }
-.title {
+
+.mouse-parallax-bg {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: var(--background-password-bg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 110%;
+  height: 110%;
+  transition: all 0.1s ease;
+}
+
+.password__title {
   font-family: "Anton";
   font-style: normal;
   font-weight: 400;
@@ -31,7 +61,7 @@
   text-align: end;
 }
 
-.title span {
+.password__title span {
   color: red;
 }
 
@@ -50,21 +80,21 @@
 }
 
 .pass__box {
+  margin: 0 auto;
   box-sizing: border-box;
   padding: 40px;
   margin: 30px 0;
   border-radius: 14px;
   border: 1px solid rgba(128, 128, 128, 0.452);
-  background-color: var(--background--card);
-  display: flex;
-  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(39px);
   -webkit-box-shadow: 50px 38px 48px -22px rgba(122, 122, 122, 0.46);
   -moz-box-shadow: 50px 38px 48px -22px rgba(122, 122, 122, 0.46);
   box-shadow: 50px 38px 48px -22px rgba(122, 122, 122, 0.46);
 }
 
 .disabled__button {
-  background-color: var(--background);
+  background-color: #00000000;
   color: gray;
   border: 1px solid gray;
 }
@@ -80,6 +110,7 @@
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
 }
+
 .button__small:hover {
   background-color: var(--button-hover);
   color: #fbfbfb;
@@ -90,7 +121,7 @@
 }
 
 .button__generate {
-  background-color: var(--background);
+  background-color: #00000000;
   color: var(--color-primary);
   font-size: 18px;
   margin: 20px;

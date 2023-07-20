@@ -4,6 +4,8 @@ import { Icon } from "../../../Icon";
 import "./styles.css";
 
 export const Welcome: FC = () => {
+
+
   return (
     <div className="welcome container">
       <div className="wrapper__container">
