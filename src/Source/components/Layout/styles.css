@@ -1,5 +1,7 @@
 @import url("../../../styles/var.css");
-
+.wrapper {
+  overflow: hidden;
+}
 .main {
   flex: 1 1 auto;
 }
