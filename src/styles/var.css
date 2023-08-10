@@ -1,25 +1,35 @@
 :root {
   --background: #e9e8e8;
   --background-image-block-bg: url("/public/img/block_light_bg.jpeg");
+  --background-password-bg: url("/public/img/pass_bg_light.jpg");
   --background--trusted: #ededed;
   --background--card: #ededed;
   --background--hover: #f8461e;
-  --button-hover: #ffffff;
+  --button-hover: #f8461e;
   --filter--brightness: 100%;
 
-  --text-primary: #000000;
-  --text-hover: #fcfafa;
+  --color-primary: #000000;
+  --color-hover: #fcfafa;
+
+  --webkit-shadow: #000000;
+  --moz-shadow: #000000;
+  --box-shadow: #000000;
 }
 
 [data-theme="dark"] {
   --background: #05010a;
   --background-image-block-bg: url("/public/img/block-bg.jpg");
+  --background-password-bg: url("/public/img/pass_bg.jpg");
   --background--trusted: #f8461e;
   --background--card: #4342426d;
   --background--hover: #f2eded;
   --filter--brightness: 200%;
   --button-hover: #f8461e;
 
-  --text-primary: #fbfbfb;
-  --text-hover: #000000;
+  --color-primary: #fbfbfb;
+  --color-hover: #000000;
+
+  --webkit-shadow: #fbfbfb;
+  --moz-shadow: #fbfbfb;
+  --box-shadow: #fbfbfb;
 }

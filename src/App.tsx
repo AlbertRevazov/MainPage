@@ -5,6 +5,7 @@ import { HomePage } from "./Source/components/Home";
 import { ToastContainer } from "react-toastify";
 import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
+import { MiniApps } from "./Source/components/MiniApps";
 
 export const App: FC = () => {
   return (
@@ -16,6 +17,14 @@ export const App: FC = () => {
             element={
               <Layout>
                 <HomePage />
+              </Layout>
+            }
+          />
+           <Route
+            path="/apps"
+            element={
+              <Layout>
+                <MiniApps />
               </Layout>
             }
           />

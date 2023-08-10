@@ -1,0 +1,58 @@
+@import "../../../../../styles/var.css";
+
+.converter {
+  padding-top: 20px;
+  position: relative;
+  top: 124px;
+  left: 0;
+  box-sizing: border-box;
+  background-color: rgba(151, 151, 153, 0.445);
+  box-sizing: border-box;
+}
+.converter__root {
+  min-height: 900px;
+
+  @media (min-width: 767.98px) {
+    min-height: 500px;
+  }
+}
+.converter__title {
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin: 10px 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 20px;
+  @media (min-width: 767.98px) {
+    text-align: end;
+  }
+}
+
+.converter__title span {
+  color: red;
+}
+
+.blocks__wrap {
+  flex-direction: column;
+  margin: 0 auto 25px;
+  overflow: hidden;
+
+  @media (min-width: 767.98px) {
+    box-sizing: border-box;
+    margin: 40px auto;
+    flex-direction: row;
+  }
+}
+
+.blocks__wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
