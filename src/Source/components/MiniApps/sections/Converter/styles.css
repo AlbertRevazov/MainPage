@@ -3,14 +3,22 @@
 .converter {
   padding-top: 20px;
   position: relative;
-  top: 124px;
+  top: 127px;
   left: 0;
   box-sizing: border-box;
-  background-color: rgba(151, 151, 153, 0.445);
-  box-sizing: border-box;
+  background: radial-gradient(
+    circle,
+    rgba(245, 7, 7, 0.437) 16%,
+    rgba(145, 0, 255, 0.437) 62%
+  );
+  background-size: 600% 600%;
+  -webkit-animation: gradientBackground 10s ease infinite;
+  -moz-animation: gradientBackground 10s ease infinite;
+  -o-animation: gradientBackground 10s ease infinite;
+  animation: gradientBackground 10s ease infinite;
 }
 .converter__root {
-  min-height: 900px;
+  min-height: 600px;
 
   @media (min-width: 767.98px) {
     min-height: 500px;
@@ -55,4 +63,39 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+}
+.api__title {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  cursor: default;
+
+  @media (min-width: 767.98px) {
+    justify-content: start;
+  }
+}
+.api__title a {
+  font-weight: 500;
+  text-decoration: none;
+  color: red;
+  margin: 0 4px;
+}
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

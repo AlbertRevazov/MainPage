@@ -6,13 +6,16 @@
     margin: 0;
   }
 }
+
 .currencies {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   margin-bottom: 20px;
-  padding: 0;
+  width: 100%;
+  padding: 15px 20px;
+  box-sizing: border-box;
+
   @media (min-width: 767.98px) {
     justify-content: flex-start;
     flex-wrap: nowrap;
@@ -25,47 +28,57 @@
   margin: 0 4px;
   width: 100%;
   text-align: center;
-  color: var(--color-primary);
-  padding: 20px;
+  color: rgb(255, 255, 255);
+  padding: 10px;
   cursor: pointer;
   transition: all 0.3s ease-in;
   border-radius: 6px;
   font-family: "Antonio";
   font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
+  font-weight: 100;
+  font-size: 20px;
   letter-spacing: 0.5px;
+  border: 1px solid rgba(0, 0, 0, 0);
+
+  --c: linear-gradient(#ffffff 0 0);
+  --d: linear-gradient(#f96306 0 0); /* update the color here */
+
+  padding-bottom: 0.25em;
+  background: var(--c), var(--c);
+  background-size: 0.3em 0.1em;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  transition: 0.3s linear, background-size 0.3s 0.2s linear;
+  @media (min-width: 767.98px) {
+    padding: 12px 0;
+    font-size: 25px;
+  }
 }
 
-.currency__item:hover {
+/* .currency__item:hover {
   background-color: #f8461e;
   color: #ffffff;
+} */
+
+.currency__item {
+}
+.currency__item:hover {
+  /* background: var(--d), var(--d); */
+  background-size: 50% 0.1em;
+  background-position: 10% 100%, 90% 100%;
 }
 
 .active {
-  border-radius: 4px;
-  border: 1px solid var(--color-primary);
-  background-color: #f8461e00;
+  padding-bottom: 0.25em;
+  background-size: 50% 0.1em;
+  background-position: 10% 100%, 90% 100%;
   cursor: default;
-  color: #ffffff;
+  color: #963131;
 }
 
 .block {
   width: 100%;
   padding: 0 40px;
-}
-
-.currency__item:hover {
-  background-color: #f8461e;
-  color: #ffffff;
-}
-
-.active {
-  border-radius: 4px;
-  border: 1px solid var(--color-primary);
-  background-color: #f8461e00;
-  cursor: default;
-  color: #ffffff;
 }
 
 .input__wrap {
