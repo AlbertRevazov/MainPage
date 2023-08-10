@@ -12,7 +12,7 @@ export const Converter: FC = () => {
     fromPrice,
     toPrice,
     OnChangeFromPrice,
-    OnChangeToPrice
+    OnChangeToPrice,
   } = useConverterHook();
 
   return (
@@ -34,6 +34,14 @@ export const Converter: FC = () => {
             onChangeCurrency={setTo}
             onChangeValue={OnChangeToPrice}
           />
+        </div>
+        <div>
+          <h2 className="api__title">
+           * the data is taken from the source -
+            <a target="_blank" href="freecurrencyapi.com">
+              freecurrencyapi.com
+            </a>
+          </h2>
         </div>
       </div>
     </div>

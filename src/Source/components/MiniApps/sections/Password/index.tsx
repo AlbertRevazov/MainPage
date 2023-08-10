@@ -1,9 +1,8 @@
-import React, { FC, useRef } from "react";
+import { FC } from "react";
 import { usePasswordGenerateHook } from "./hooks";
 import { Inputs } from "./sections/Inputs";
-import "./styles.css";
 import { CheckboxSelect } from "./sections/CheckboxSelect";
-import { Parallax } from "../../../../../Utils/Parallax";
+import "./styles.css";
 
 export const Password: FC = () => {
   const {
