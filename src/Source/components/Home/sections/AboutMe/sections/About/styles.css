@@ -145,6 +145,7 @@
   letter-spacing: -0.02em;
   color: #a9a9aa;
   margin-top: 29px;
+  width: 70%;
 }
 
 .about__hero__title {
@@ -175,6 +176,7 @@
   left: -80px;
 
   @media (min-width: 500px) {
+    width: 100%;
     position: static;
     line-height: 32px;
   }

@@ -1,7 +1,7 @@
 import { FC } from "react";
-import { Icon } from "../../../../../Icon";
-import { Links } from "../../../../../Links";
+import { Icon } from "../../../Icon";
 import "./stylex.css";
+import { Links } from "../../../Links";
 
 export const Contacts: FC = () => {
   return (

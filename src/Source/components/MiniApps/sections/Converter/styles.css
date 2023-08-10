@@ -1,9 +1,9 @@
 @import "../../../../../styles/var.css";
 
 .converter {
-  padding-top: 60px;
+  padding-top: 20px;
   position: relative;
-  top: 140px;
+  top: 124px;
   left: 0;
   box-sizing: border-box;
   background-color: rgba(151, 151, 153, 0.445);
@@ -27,8 +27,11 @@
   color: var(--color-primary);
   margin: 10px 0 auto;
   box-sizing: border-box;
-  text-align: start;
+  text-align: center;
   padding: 0 20px;
+  @media (min-width: 767.98px) {
+    text-align: end;
+  }
 }
 
 .converter__title span {

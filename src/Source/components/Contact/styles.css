@@ -1,17 +1,33 @@
-.contact__wrapper {
+.home__contact {
   background-image: url("/public/img/contact-bg.jpg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
+  padding: 20px 0;
   position: relative;
   left: 0px;
-  top: 200px;
+  top: 240px;
   @media (min-width: 767.98px) {
     top: 114px;
   }
 }
 
+.apps__contact {
+  background-image: url("/public/img/contact-bg.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+  left: 0px;
+  top: 134px;
+  
+  @media (min-width: 767.98px) {
+    top: 140px;
+  }
+}
 .contact__container {
   display: flex;
   justify-content: center;

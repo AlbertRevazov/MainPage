@@ -7,6 +7,7 @@ import "./styles.css";
 export const Navbar: FC = () => {
   const isMobile = useMediaQuery("(max-width:767.98px)");
   const isHome = window.location.pathname === "/";
+  
   return (
     <>
       {!isMobile ? (

@@ -16,7 +16,8 @@ body {
   background-image: var(--background-image-block-bg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right;  overflow: hidden;
+
 }
 
 .wrapper__container {
@@ -25,7 +26,6 @@ body {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
 }
 
 .hello {
