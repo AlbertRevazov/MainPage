@@ -1,16 +1,14 @@
 .contact__wrapper {
   background-image: url("/public/img/contact-bg.jpg");
-  background-position: center;
-  background-attachment: fixed;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
   position: relative;
   left: 0px;
-  top: 250px;
-
+  top: 200px;
   @media (min-width: 767.98px) {
-    top: 140px;
+    top: 114px;
   }
 }
 

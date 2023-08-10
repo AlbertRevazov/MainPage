@@ -1,6 +1,4 @@
 import React, { Dispatch, FC, SetStateAction } from "react";
-import { TextField } from "@mui/material";
-
 import "./styles.css";
 
 const defaultCurrencies = ["RUB", "USD", "EUR", "GBP"];

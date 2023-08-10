@@ -47,8 +47,6 @@ export const useConverterHook = () => {
 
   const [rates, setRates] = useState<Rates>({});
 
-  console.log(rates);
-
   const OnChangeFromPrice = (value: number) => {
     const result = (value / rates[from]) * rates[to];
 
@@ -67,11 +65,6 @@ export const useConverterHook = () => {
     headers: {
       apikey: "fca_live_pPrhoCSGi8rDTgZuV9AbHtv4EcXnI7KcBNyLUUcY",
     },
-  };
-
-  const SwitchCurrency = () => {
-    setFrom(to);
-    setTo(from);
   };
 
   useEffect(() => {
@@ -103,8 +96,5 @@ export const useConverterHook = () => {
     toPrice,
     OnChangeFromPrice,
     OnChangeToPrice,
-    SwitchCurrency,
-    rates,
-    currencyValuesArray,
   };
 };

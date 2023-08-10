@@ -1,6 +1,6 @@
 import React, { FC, useEffect } from "react";
 import "./styles.css";
-import { Block } from "./Block";
+import { Block } from "./Block/Block";
 import { useConverterHook } from "./hooks";
 
 export const Converter: FC = () => {
@@ -12,14 +12,12 @@ export const Converter: FC = () => {
     fromPrice,
     toPrice,
     OnChangeFromPrice,
-    OnChangeToPrice,
-    SwitchCurrency,
-    currencyValuesArray,
+    OnChangeToPrice
   } = useConverterHook();
 
   return (
     <div className="converter">
-      <div className="converter__container ">
+      <div className="converter__root __container ">
         <h2 className="converter__title">
           <span> 02</span> Currency Converter
         </h2>
@@ -30,15 +28,6 @@ export const Converter: FC = () => {
             onChangeCurrency={setFrom}
             onChangeValue={OnChangeFromPrice}
           />
-          <div className="switcher__cur">
-            <img src="/img/arrow_left.png" alt="left" width={40} height={40} />
-            <img
-              src="/img/arrow_right.png"
-              alt="right"
-              width={40}
-              height={40}
-            />
-          </div>
           <Block
             value={!!toPrice ? toPrice : 0}
             currency={to}

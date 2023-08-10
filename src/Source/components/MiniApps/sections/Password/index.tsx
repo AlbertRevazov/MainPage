@@ -22,7 +22,6 @@ export const Password: FC = () => {
   return (
     <>
       <div className="password__root">
-        {/* <div className="mouse-parallax-bg" /> */}
         <div className="password__container">
           <h2 className="password__title">
             <span> 01</span> Password Generate

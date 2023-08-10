@@ -13,7 +13,6 @@ body {
   margin: 0 auto;
   left: 0px;
   top: 114px;
-  overflow: hidden;
   background-image: var(--background-image-block-bg);
   background-size: cover;
   background-repeat: no-repeat;
