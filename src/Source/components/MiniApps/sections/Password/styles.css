@@ -2,7 +2,7 @@
 
 .password__root {
   background-image: var(--background-password-bg);
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -88,8 +88,8 @@
   margin: 0;
   border-radius: 14px;
   border: 1px solid rgba(128, 128, 128, 0.452);
-  background-color: rgba(0, 0, 0, 0);
-  backdrop-filter: blur(39px);
+  background-color: rgba(255, 255, 255, 0.282);
+  backdrop-filter: blur(2px);
   -webkit-box-shadow: 50px 38px 48px -22px rgba(122, 122, 122, 0.46);
   -moz-box-shadow: 50px 38px 48px -22px rgba(122, 122, 122, 0.46);
   box-shadow: 50px 38px 48px -22px rgba(122, 122, 122, 0.46);
