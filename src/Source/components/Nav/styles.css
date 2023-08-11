@@ -13,27 +13,50 @@
 
 .menu__list {
   display: flex;
-  /* отступ между элементами, не рекомендуется т к у старых сафари нет поддержки*/
-  /* gap: 40px; */
 }
 
 .menu__item {
+  overflow: hidden;
+  cursor: pointer;
   color: #ffffff;
-  margin: 0px 40px 0px 0px;
-  padding: 10px;
-  border-bottom: 1px solid rgba(255, 0, 0, 0);
+  margin: 0px 12px 0px 0px;
   transition: all 0.3s ease-in;
-  filter: brightness(0.45);
+  filter: brightness(1);
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
 }
 
-.menu__item:hover {
-  border-bottom: 1px solid red;
-  filter: brightness(2);
-  border-radius: 4px;
+.menu__link {
+  position: relative;
+  transition: all 0.45s ease-in;
+  color: #bfc0c0;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.translate {
+  transform: rotate(50deg);
+  width: 100%;
+  height: 250%;
+  left: -200px;
+  top: -30px;
+  background: var(--reverse-hover);
+  position: absolute;
+  transition: all 0.3s ease-Out;
 }
 
-.menu__icon {
-  color: #fe390c;
+.menu__item:hover .translate {
+  left: 0;
+}
+.menu__item:hover a {
+  color: #ffffff;
 }
 
 .menu__link {
@@ -41,7 +64,6 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px;
-  /* запись в таком виде дает нам относительный размер */
   line-height: 1.2;
   color: var(--color-primary);
   letter-spacing: 1px;

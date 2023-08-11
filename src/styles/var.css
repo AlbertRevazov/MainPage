@@ -5,6 +5,7 @@
   --background--trusted: #ededed;
   --background--card: #ededed;
   --background--hover: #f8461e;
+  --reverse-hover: #000000;
   --button-hover: #f8461e;
   --filter--brightness: 100%;
 
@@ -25,7 +26,7 @@
   --background--hover: #f2eded;
   --filter--brightness: 200%;
   --button-hover: #f8461e;
-
+  --reverse-hover: #f8461e;
   --color-primary: #fbfbfb;
   --color-hover: #000000;
 

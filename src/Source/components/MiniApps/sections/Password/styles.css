@@ -2,7 +2,7 @@
 
 .password__root {
   background-image: var(--background-password-bg);
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;

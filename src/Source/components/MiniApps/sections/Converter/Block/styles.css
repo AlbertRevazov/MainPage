@@ -28,8 +28,7 @@
   margin: 0 4px;
   width: 100%;
   text-align: center;
-  color: rgb(255, 255, 255);
-  padding: 10px;
+  color: var(--color-primary);
   cursor: pointer;
   transition: all 0.3s ease-in;
   border-radius: 6px;
@@ -41,39 +40,30 @@
   border: 1px solid rgba(0, 0, 0, 0);
 
   --c: linear-gradient(#ffffff 0 0);
-  --d: linear-gradient(#f96306 0 0); /* update the color here */
+  --d: linear-gradient(#f96306 0 0);
 
-  padding-bottom: 0.25em;
   background: var(--c), var(--c);
   background-size: 0.3em 0.1em;
   background-position: 50% 100%;
   background-repeat: no-repeat;
   transition: 0.3s linear, background-size 0.3s 0.2s linear;
+
   @media (min-width: 767.98px) {
     padding: 12px 0;
     font-size: 25px;
   }
 }
 
-/* .currency__item:hover {
-  background-color: #f8461e;
-  color: #ffffff;
-} */
-
-.currency__item {
-}
 .currency__item:hover {
-  /* background: var(--d), var(--d); */
   background-size: 50% 0.1em;
   background-position: 10% 100%, 90% 100%;
 }
 
 .active {
-  padding-bottom: 0.25em;
   background-size: 50% 0.1em;
   background-position: 10% 100%, 90% 100%;
   cursor: default;
-  color: #963131;
+  color: #f96306;
 }
 
 .block {
