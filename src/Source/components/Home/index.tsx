@@ -3,7 +3,8 @@ import { Welcome } from "./sections/Welcome";
 import { AboutMe } from "./sections/AboutMe";
 import { Service } from "./sections/Service";
 import { WorkExperience } from "./sections/WorkExperience";
-import { Contact } from "./sections/Contact";
+import { Contact } from "../Contact";
+import { Footer } from "../Footer";
 
 export const HomePage: FC = () => {
   const theme = document.body.dataset.theme;
@@ -16,6 +17,7 @@ export const HomePage: FC = () => {
       <Service />
       <WorkExperience />
       <Contact />
+      <Footer />
     </>
   );
 };

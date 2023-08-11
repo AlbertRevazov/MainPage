@@ -4,7 +4,7 @@ body {
   background-color: var(--background);
 }
 
-.container {
+.welcome {
   position: relative;
   display: flex;
   justify-content: start;
@@ -13,11 +13,11 @@ body {
   margin: 0 auto;
   left: 0px;
   top: 114px;
-  overflow: hidden;
   background-image: var(--background-image-block-bg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right;  overflow: hidden;
+
 }
 
 .wrapper__container {

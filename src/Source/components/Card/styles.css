@@ -28,7 +28,7 @@
 
     .card__title,
     .card__description {
-      color: var(--text-hover);
+      color: var(--color-hover);
     }
   }
 }
@@ -47,7 +47,7 @@
   font-size: 16px;
   line-height: 30px;
   letter-spacing: -0.04em;
-  color: var(--text-primary);
+  color: var(--color-primary);
   cursor: default;
   transition: color 0.3s ease-in;
 }
