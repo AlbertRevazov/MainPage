@@ -19,13 +19,12 @@
   letter-spacing: 0.5px;
   margin: 0 8px;
   color: var(--color-primary);
-
   @media (min-width: 767.98px) {
     font-size: 21px;
   }
 }
 
-.select {
+select {
   font-family: monospace;
   text-transform: uppercase;
   font-weight: 800;
@@ -34,7 +33,7 @@
   letter-spacing: 1px;
   border: 1px solid var(--color-primary);
   border-radius: 10px;
-  background-color: var(--background);
+  background-color: rgba(0, 0, 0, 0);
   color: var(--color-primary);
   margin: 4px;
   padding: 0 2px;
@@ -45,6 +44,6 @@
   }
 }
 
-.checkbox__input span  {
+.checkbox__input span {
   color: red;
 }

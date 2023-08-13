@@ -1,5 +1,10 @@
 @import url("../../../styles/var.css");
 
+body {
+  padding-right: 0px !important;
+  overflow: auto !important;
+}
+
 .menu {
   display: flex;
   justify-content: flex-end;

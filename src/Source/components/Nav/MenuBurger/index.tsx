@@ -19,7 +19,6 @@ export const MenuBurger: FC = () => {
 
   return (
     <>
-      {" "}
       {isHome ? (
         <div>
           <Button

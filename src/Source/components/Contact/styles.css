@@ -12,6 +12,9 @@
 .home__contact {
   left: 0px;
   top: 240px;
+  @media (min-width: 767.98px) {
+    top: 140px;
+  }
 }
 
 .apps__contact {
@@ -19,12 +22,6 @@
   top: 134px;
 }
 
-@media (min-width: 767.98px) {
-  .apps__contact,
-  .home__contact {
-    top: 140px;
-  }
-}
 .contact__container {
   display: flex;
   justify-content: center;

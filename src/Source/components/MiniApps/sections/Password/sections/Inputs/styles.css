@@ -38,14 +38,15 @@
   padding-bottom: 6px;
   margin: 20px;
   color: var(--color-primary);
-  background-color: var(--background);
+  background-color: #00000000;
+
   border: 1px solid var(--color-primary);
 }
 
 .add__input::placeholder {
   font-family: "Montserrat";
   font-style: normal;
-  color: grey;
+  color: var(--color-primary);
   font-size: 17px;
   font-weight: 500;
 }

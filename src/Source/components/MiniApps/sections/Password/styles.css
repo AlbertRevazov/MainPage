@@ -1,10 +1,13 @@
 @import "../../../../../styles/var.css";
 
 .password__root {
-  background-image: var(--background-password-bg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: radial-gradient(
+    circle,
+    rgba(43, 158, 252, 0.692) 16%,
+    rgba(94, 56, 233, 0.652) 62%
+  );
+  background-size: 600% 600%;
+  animation: gradientBackground 10s ease infinite;
   position: relative;
   overflow: hidden;
   left: 0px;

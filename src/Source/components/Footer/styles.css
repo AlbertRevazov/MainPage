@@ -13,10 +13,10 @@
   top: 200px;
 }
 .apps__footer {
-  top: 114px;
+  top: 134px;
 }
 @media (min-width: 767.98px) {
-  .footer {
+  .home__footer {
     top: 140px;
   }
 }

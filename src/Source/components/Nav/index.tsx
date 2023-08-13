@@ -6,11 +6,11 @@ import "./styles.css";
 <div className="translate"></div>;
 
 export const Navbar: FC = () => {
-  const isMobile = useMediaQuery("(max-width:767.98px)");
+  const isMobile = useMediaQuery("(min-width:999.98px)");
   const isHome = window.location.pathname === "/";
   return (
     <>
-      {!isMobile ? (
+      {isMobile ? (
         <div style={{ display: "flex", alignItems: "center" }}>
           <nav id="menu" className="menu__body">
             <ul className="menu__list">

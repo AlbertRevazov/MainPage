@@ -1,7 +1,7 @@
-import React, { FC, useEffect } from "react";
-import "./styles.css";
+import { FC } from "react";
 import { Block } from "./Block/Block";
 import { useConverterHook } from "./hooks";
+import "./styles.css";
 
 export const Converter: FC = () => {
   const {
