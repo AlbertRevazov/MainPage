@@ -4,7 +4,7 @@ import "./styles.css";
 export const AboutBlock: FC = () => {
   return (
     <div className="about__container">
-      <div id="about" className="about__wrapper">
+      <div className="about__wrapper">
         <div className="about__wrapper__blocks">
           <div className="about__years__block">
             <img

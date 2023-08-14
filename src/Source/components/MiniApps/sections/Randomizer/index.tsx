@@ -1,5 +1,7 @@
 import { FC } from "react";
 import { useRandomizerHook } from "./hooks";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import "./styles.css";
 
 export const Randomizer: FC = () => {
@@ -11,8 +13,9 @@ export const Randomizer: FC = () => {
     handleMaxChange,
     handleGenerate,
     load,
+    copied,
+    copyHandler,
   } = useRandomizerHook();
-  console.log(load || max === 0);
 
   return (
     <div className="random">
@@ -56,8 +59,8 @@ export const Randomizer: FC = () => {
             onClick={
               max === 0
                 ? () => {
-                  alert("Enter max value");
-                }
+                    alert("Enter max value");
+                  }
                 : handleGenerate
             }
           >
@@ -71,6 +74,17 @@ export const Randomizer: FC = () => {
             className={!load ? "result" : "res__loading"}
             readOnly
             value={!load ? result : "Loading..."}
+          />
+
+          <ContentCopyIcon
+            className={
+              !result && result !== 0
+                ? "copy__icon__disable"
+                : copied
+                ? "copied__icon"
+                : "copy__icon"
+            }
+            onClick={copyHandler}
           />
         </div>
       </div>

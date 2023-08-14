@@ -5,7 +5,7 @@ import "./styles.css";
 
 export const Service: FC = () => {
   return (
-    <div id="service" className="service__container">
+    <div className="service__container">
       <div className="service__wrapper">
         <div className="service__title">
           <h3 className={"service__count"}>02</h3>

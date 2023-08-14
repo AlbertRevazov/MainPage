@@ -5,7 +5,7 @@ import "./styles.css";
 
 export const WorkExperience: FC = () => {
   return (
-    <div id="experience" className="work__experience">
+    <div className="work__experience">
       <div className="work__experience__container">
         <div className="work__experience__title">
           <h3 className="work__experience__count">03</h3>

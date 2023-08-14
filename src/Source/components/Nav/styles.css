@@ -101,7 +101,7 @@ body {
 
 @media (max-width: 767.98px) {
   .menu__body {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
