@@ -21,10 +21,16 @@ export const useRandomizerHook = () => {
   const handleGenerate: React.MouseEventHandler<HTMLButtonElement> = () => {
     setload(true);
     const res = Math.round(Math.random() * (max - min) + min);
-    setTimeout(() => {
+    if (min > max) {
+      alert("Min is greater than max");
       setload(false);
-      setResult(res);
-    }, 1500);
+      setResult(0);
+    } else {
+      setTimeout(() => {
+        setload(false);
+        setResult(res);
+      }, 1500);
+    }
   };
 
   return {

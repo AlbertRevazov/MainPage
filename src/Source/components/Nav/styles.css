@@ -46,6 +46,7 @@ body {
   text-align: center;
   letter-spacing: 1px;
 }
+
 .translate {
   transform: rotate(50deg);
   width: 100%;
@@ -60,6 +61,7 @@ body {
 .menu__item:hover .translate {
   left: 0;
 }
+
 .menu__item:hover a {
   color: #ffffff;
 }
@@ -81,7 +83,7 @@ body {
 
 .burger__link {
   color: var(--color-primary);
-  transition: color 0.3s ease-in;
+  transition: color 0.1s ease-in;
 }
 
 .burger__link:hover {
@@ -90,6 +92,11 @@ body {
 
 #basic-menu ul {
   background-color: var(--background);
+}
+
+#basic-button {
+  color: #fe390c;
+  border-radius: 14px;
 }
 
 @media (max-width: 767.98px) {

@@ -28,6 +28,7 @@ export const Randomizer: FC = () => {
             <input
               type="text"
               name="min"
+              maxLength={15}
               className="textfield min"
               value={min}
               onChange={handleMinChange}
@@ -38,6 +39,7 @@ export const Randomizer: FC = () => {
             <input
               type="text"
               name="max"
+              maxLength={15}
               className="textfield max"
               value={max}
               onChange={handleMaxChange}
@@ -48,20 +50,27 @@ export const Randomizer: FC = () => {
         <div className="btn__wrap">
           <button
             type="button"
-            className="btn__random"
-            onClick={handleGenerate}
-            disabled={max === 0 || load}
+            className={
+              max === 0 ? (!load ? "disabled" : "res__loading") : "btn__random"
+            }
+            onClick={
+              max === 0
+                ? () => {
+                  alert("Enter max value");
+                }
+                : handleGenerate
+            }
           >
-            {!load ? "Generate" : "Loading..."}
+            Generate
           </button>
         </div>
         <div className="inputs__random">
           <input
             type="text"
             name="result"
-            className="result"
+            className={!load ? "result" : "res__loading"}
             readOnly
-            value={result}
+            value={!load ? result : "Loading..."}
           />
         </div>
       </div>

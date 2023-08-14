@@ -28,7 +28,7 @@ export const MenuBurger: FC = () => {
             aria-expanded={open ? "true" : undefined}
             onClick={handleClick}
           >
-            <MenuIcon className={"menu__icon"} />
+            <MenuIcon className={"menu__icon"} color="warning" />
           </Button>
           <Menu
             id="basic-menu"
@@ -75,7 +75,7 @@ export const MenuBurger: FC = () => {
             aria-expanded={open ? "true" : undefined}
             onClick={handleClick}
           >
-            <MenuIcon className={"menu__icon"} />
+            <MenuIcon className={"menu__icon"} color="warning" />
           </Button>
           <Menu
             id="basic-menu"
