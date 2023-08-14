@@ -75,17 +75,18 @@ export const Randomizer: FC = () => {
             readOnly
             value={!load ? result : "Loading..."}
           />
-
-          <ContentCopyIcon
-            className={
-              !result && result !== 0
-                ? "copy__icon__disable"
-                : copied
-                ? "copied__icon"
-                : "copy__icon"
-            }
-            onClick={copyHandler}
-          />
+          {!load && (
+            <ContentCopyIcon
+              className={
+                !result && result !== 0
+                  ? "copy__icon__disable"
+                  : copied
+                  ? "copied__icon"
+                  : "copy__icon"
+              }
+              onClick={copyHandler}
+            />
+          )}
         </div>
       </div>
     </div>

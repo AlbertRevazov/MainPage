@@ -6,8 +6,8 @@
   box-sizing: border-box;
   background: radial-gradient(
     circle,
-    rgba(240, 23, 23, 0.692) 16%,
-    rgba(233, 56, 71, 0.652) 62%
+    rgba(239, 63, 63, 0.692) 16%,
+    rgba(245, 95, 108, 0.652) 62%
   );
   background-size: 600% 600%;
   animation: gradientBackground 10s ease infinite;
@@ -159,7 +159,7 @@
   line-height: 15px;
   text-transform: uppercase;
   background-color: #00000000;
-  color: var(--color-primary);
+  color: #ffee00;
   outline: none;
 }
 
