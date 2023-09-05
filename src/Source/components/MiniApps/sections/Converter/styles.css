@@ -6,16 +6,7 @@
   top: 120px;
   left: 0;
   box-sizing: border-box;
-  background: radial-gradient(
-    circle,
-    rgba(200, 43, 252, 0.842) 16%,
-    rgba(235, 7, 117, 0.474) 62%
-  );
-  background-size: 600% 600%;
-  -webkit-animation: gradientBackground 10s ease infinite;
-  -moz-animation: gradientBackground 10s ease infinite;
-  -o-animation: gradientBackground 10s ease infinite;
-  animation: gradientBackground 10s ease infinite;
+  background-color: var(--apps--background);
 }
 .converter__root {
   min-height: 600px;
@@ -43,7 +34,7 @@
 }
 
 .converter__title span {
-  color: red;
+  color: #fe390c;
 }
 
 .blocks__wrap {
@@ -87,15 +78,4 @@
   text-decoration: none;
   color: red;
   margin: 0 4px;
-}
-@keyframes gradientBackground {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }

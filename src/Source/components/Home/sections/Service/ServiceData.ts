@@ -6,7 +6,7 @@ export const data = [
     description: `I prepare/write/develop HTML code by layout Figma, 
     exporting images for Web, 
     create reusable components, and others`,
-    title: "Frontend Develop",
+    title: "Frontend",
     width: 28,
     height: 28,
   },
@@ -18,7 +18,7 @@ export const data = [
     description: `Creating a server on Node js using the 
     Express library, managing routers, have experience 
     creating a DB with grahpQL.`,
-    title: "Backend Develop",
+    title: "Backend",
     width: 28,
     height: 28,
   },

@@ -17,7 +17,7 @@
 .service__title {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: end;
   margin: 50px auto;
 }
 

@@ -1,7 +1,6 @@
 import { FC } from "react";
 import { useRandomizerHook } from "./hooks";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
-import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import "./styles.css";
 
 export const Randomizer: FC = () => {
@@ -24,7 +23,7 @@ export const Randomizer: FC = () => {
           <span>03</span> Randomizer
         </h2>
         <h3 className="random__description">
-          Getting a random integer between two values
+          <span>Getting</span> a random integer between two values
         </h3>
         <div className="inputs__random">
           <div className="inputs__wrap">
@@ -71,22 +70,20 @@ export const Randomizer: FC = () => {
           <input
             type="text"
             name="result"
-            className={!load ? "result" : "res__loading"}
+            className={load ? "res__loading" : copied ? "copy" : "result"}
             readOnly
-            value={!load ? result : "Loading..."}
+            value={load ? "Loading..." : copied ? "copied" : result}
           />
-          {!load && (
-            <ContentCopyIcon
-              className={
-                !result && result !== 0
-                  ? "copy__icon__disable"
-                  : copied
-                  ? "copied__icon"
-                  : "copy__icon"
-              }
-              onClick={copyHandler}
-            />
-          )}
+          <ContentCopyIcon
+            className={
+              !result && result !== 0
+                ? "copy__icon__disable"
+                : copied
+                ? "copied__icon"
+                : "copy__icon"
+            }
+            onClick={copyHandler}
+          />
         </div>
       </div>
     </div>

@@ -9,6 +9,8 @@
   --button-hover: #f8461e;
   --filter--brightness: 100%;
 
+  --apps--background: #c3bfbf;
+
   --button-green: #ffffff;
 
   --color-primary: #000000;
@@ -32,7 +34,7 @@
   --color-primary: #fbfbfb;
   --color-hover: #000000;
   --button-green: #ffffff;
-
+  --apps--background: #2b2a2aa4;
   --webkit-shadow: #fbfbfb;
   --moz-shadow: #fbfbfb;
   --box-shadow: #fbfbfb;

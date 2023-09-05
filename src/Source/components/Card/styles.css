@@ -5,65 +5,127 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-}
-
-.card__wrapper {
-  width: 100%;
-  height: 260.06px;
-  margin: 12px 12px;
-  background: var(--background--card);
-  border-radius: 8px;
-  padding: 22px;
-
-  @media (min-width: 539.98px) {
-    width: 300px;
+  @media (min-width: 767.98px) {
+    flex-wrap: nowrap;
   }
 }
 
-@media (min-width: 767.98px) {
-  .card__wrapper:hover {
-    background-color: var(--background--hover);
-    transition: all 0.3s ease-in;
-    cursor: pointer;
-
-    .card__title,
-    .card__description {
-      color: var(--color-hover);
-    }
-  }
-}
-
-.card__icon {
+.card__root {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin: 21px 0;
+  justify-content: center;
+  width: 100%;
+  max-width: 695px;
+
+  @media (min-width: 799.98px) {
+    margin: 0 20px;
+    max-height: 450px;
+  }
+}
+.card__image {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
-.card__title {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: -0.04em;
-  color: var(--color-primary);
-  cursor: default;
-  transition: color 0.3s ease-in;
+.card {
+  color: inherit;
+  cursor: pointer;
+  width: calc(80% - 2rem);
+  height: 400px;
+  perspective: 1000px;
+  margin: 1rem;
+  position: relative;
+
+  @media screen and (min-width: 767.98px) {
+    width: 100%;
+  }
+}
+.front,
+.back {
+  display: flex;
+  border-radius: 6px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: ease-in-out 600ms;
 }
 
-.card__description {
-  font-family: "Montserrat";
+.front {
+  background-color: var(--reverse-hover);
+  font-size: 1.618rem;
+  font-weight: 600;
+  overflow: hidden;
+  font-family: Anton, sans-serif;
+}
+.front p {
+  position: absolute;
+  top: 170px;
+  left: 0;
+  right: 0;
+  padding: 10px 0 15px;
+  background-color: #000f1a90;
+  font-family: Raleway;
   font-style: normal;
+  font-size: 43px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.02em;
-  color: #a9a9aa;
-  transition: color 0.3s ease-in;
-  cursor: default;
+  line-height: 38px;
+  letter-spacing: 1px;
+  color: #ffffff;
 }
 
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+
+.back {
+  overflow: hidden;
+  transform: rotateY(-180deg);
+  padding: 0 2em;
+  background-color: var(--color-hover);
+}
+.back p {
+  width: 100%;
+  font-family: Raleway;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+  letter-spacing: 0.5px;
+  padding: 10px;
+  color: #fff;
+  border-top: 1px solid #e87f0ed0;
+  border-bottom: 1px solid #e87f0ed0;
+
+  @media screen and (min-width: 767.98px) {
+    line-height: 30px;
+  }
+
+  @media screen and (min-width: 399.98px) {
+    font-size: 18px;
+  }
+}
+
+.back p::first-letter {
+  color: rgba(255, 85, 0, 0.895);
+  font-size: 42px;
+  font-weight: 900;
+  padding: 10px 3px 15px;
+}
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+
+/* Styles for work Experience cards */
+/* --------------------------------- */
 .work__experience__wrapper {
   display: flex;
   position: relative;
