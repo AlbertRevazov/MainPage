@@ -28,18 +28,4 @@ export const data = [
     width: 360,
     height: 244,
   },
-  {
-    id: 3,
-    description: `
-    - Parallel work on several projects
-    - Development of new functionality;
-    - Implementation of page redesign;
-    - Design of architectural solutions;
-    - Refactoring code to improve performance;
-    - Rest api integration;`,
-    src: "/img/alpha.jpg",
-    title: "Alpha",
-    width: 360,
-    height: 244,
-  },
 ];
