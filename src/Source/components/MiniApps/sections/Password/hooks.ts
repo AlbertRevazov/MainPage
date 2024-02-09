@@ -1,6 +1,20 @@
 import { useState } from "react";
 
-export const usePasswordGenerateHook = () => {
+type usePasswordReturn = {
+  handleChangeLength: React.FocusEventHandler<HTMLSelectElement>;
+  animationhandler: () => void;
+  copyHandler: () => void;
+  animated: boolean;
+  userInput: string;
+  userInputhandler: React.ChangeEventHandler<HTMLInputElement>;
+  handleUserInput: () => void;
+  result: string;
+  copied: boolean;
+  passwordlengthValues: string[];
+  boxHandler: () => void;
+};
+
+export const usePasswordGenerateHook = (): usePasswordReturn => {
   // Переменные для создания пароля и для определения его длины
   let chars = "0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
   const symbols = "!@#$()_?.;:";

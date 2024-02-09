@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { useFormHook } from "./hooks";
-import "react-toastify/dist/ReactToastify.css";
 import "./styles.css";
 
 export const Form: FC = () => {

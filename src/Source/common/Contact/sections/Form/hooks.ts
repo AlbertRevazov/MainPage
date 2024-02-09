@@ -1,8 +1,18 @@
 import React from "react";
 import { send } from "emailjs-com";
-import { toast } from "react-toastify";
 
-export const useFormHook = () => {
+type useFormReturn = {
+  handleSubmit: React.FormEventHandler<HTMLFormElement>;
+  handleChange: React.ChangeEventHandler<HTMLInputElement>;
+  handleTextAreaChange: React.ChangeEventHandler<HTMLTextAreaElement>;
+  toSend: {
+    name: string;
+    email: string;
+    message: string;
+  };
+};
+
+export const useFormHook = (): useFormReturn => {
   const [toSend, setToSend] = React.useState({
     name: "",
     email: "",
@@ -16,7 +26,7 @@ export const useFormHook = () => {
     e
   ) => setToSend((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit: React.FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
     try {
       await send(
@@ -25,10 +35,9 @@ export const useFormHook = () => {
         toSend,
         "_qyHVdzaAP9u0bOTT"
       );
-      toast.success("The email has been sent");
       setToSend({ name: "", email: "", message: "" });
     } catch (error) {
-      toast.error("Sending error");
+      console.log("Sending error");
     }
   };
 

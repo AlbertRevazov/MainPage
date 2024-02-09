@@ -4,9 +4,20 @@ type Rates = {
   [key: string]: number;
 };
 
+type useConverterReturn = {
+  from: string;
+  setFrom: React.Dispatch<React.SetStateAction<string>>;
+  to: string;
+  setTo: React.Dispatch<React.SetStateAction<string>>;
+  fromPrice: number;
+  toPrice: number;
+  OnChangeFromPrice: (value: number) => void;
+  OnChangeToPrice: (value: number) => void;
+};
+
 export type Currenc = { name: string; title: string };
 
-export const useConverterHook = () => {
+export const useConverterHook = (): useConverterReturn => {
   const [from, setFrom] = useState("RUB");
   const [to, setTo] = useState("USD");
   const [fromPrice, setFromPrice] = useState(0);

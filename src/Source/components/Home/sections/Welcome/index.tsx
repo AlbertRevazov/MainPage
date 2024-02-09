@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { Links } from "../../../../common/Links";
 import { Icon } from "../../../../common/Icon";
 import "./styles.css";

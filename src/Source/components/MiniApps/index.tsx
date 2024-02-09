@@ -16,3 +16,4 @@ export const MiniApps: FC = () => {
     </>
   );
 };
+export default MiniApps;

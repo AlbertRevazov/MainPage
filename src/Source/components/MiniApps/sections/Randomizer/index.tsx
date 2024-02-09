@@ -1,22 +1,8 @@
 import { FC } from "react";
-import { useRandomizerHook } from "./hooks";
-import ContentCopyIcon from "@mui/icons-material/ContentCopy";
-import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+import { Randomizerlabels } from "./Labels";
 import "./styles.css";
 
 export const Randomizer: FC = () => {
-  const {
-    min,
-    max,
-    result,
-    handleMinChange,
-    handleMaxChange,
-    handleGenerate,
-    load,
-    copied,
-    copyHandler,
-  } = useRandomizerHook();
-
   return (
     <div className="random">
       <div className="random__container">
@@ -26,68 +12,7 @@ export const Randomizer: FC = () => {
         <h3 className="random__description">
           Getting a random integer between two values
         </h3>
-        <div className="inputs__random">
-          <div className="inputs__wrap">
-            <input
-              type="text"
-              name="min"
-              maxLength={15}
-              className="textfield min"
-              value={min}
-              onChange={handleMinChange}
-            />
-            <h3>Minimal value</h3>
-          </div>
-          <div className="inputs__wrap">
-            <input
-              type="text"
-              name="max"
-              maxLength={15}
-              className="textfield max"
-              value={max}
-              onChange={handleMaxChange}
-            />
-            <h3>Maximal value</h3>
-          </div>
-        </div>
-        <div className="btn__wrap">
-          <button
-            type="button"
-            className={
-              max === 0 ? (!load ? "disabled" : "res__loading") : "btn__random"
-            }
-            onClick={
-              max === 0
-                ? () => {
-                    alert("Enter max value");
-                  }
-                : handleGenerate
-            }
-          >
-            Generate
-          </button>
-        </div>
-        <div className="inputs__random">
-          <input
-            type="text"
-            name="result"
-            className={!load ? "result" : "res__loading"}
-            readOnly
-            value={!load ? result : "Loading..."}
-          />
-          {!load && (
-            <ContentCopyIcon
-              className={
-                !result && result !== 0
-                  ? "copy__icon__disable"
-                  : copied
-                  ? "copied__icon"
-                  : "copy__icon"
-              }
-              onClick={copyHandler}
-            />
-          )}
-        </div>
+        <Randomizerlabels />
       </div>
     </div>
   );

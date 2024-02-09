@@ -1,9 +1,10 @@
-import { FC } from "react";
+import { FC, lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Layout } from "./Source/common/Layout";
-import { HomePage } from "./Source/components/Home";
-import { MiniApps } from "./Source/components/MiniApps";
 import "./App.css";
+
+const Layout = lazy(() => import("./Source/common/Layout"));
+const HomePage = lazy(() => import("./Source/components/Home"));
+const MiniApps = lazy(() => import("./Source/components/MiniApps"));
 
 export const App: FC = () => {
   return (

@@ -1,6 +1,21 @@
 import React from "react";
 
-export const useHookCards = () => {
+type useHookCardsReturn = {
+  handleMouseEnter: () => void;
+  isHover: boolean;
+  handleMouseLeave: () => void;
+  hoverStyle: {
+    backgroundColor: string;
+    top: string;
+    left: string | number;
+    width: string;
+    height: string;
+    padding: string;
+    transition: string;
+  };
+};
+
+export const useHookCards = (): useHookCardsReturn => {
   const [isHover, setIsHover] = React.useState<boolean>(false);
 
   const handleMouseEnter = () => {

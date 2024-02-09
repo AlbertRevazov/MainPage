@@ -1,9 +1,9 @@
-import { FC } from "react";
+import { FC, memo } from "react";
 import { Card } from "../../../../common/Card";
 import { data } from "./ServiceData";
 import "./styles.css";
 
-export const Service: FC = () => {
+export const Service: FC = memo(() => {
   return (
     <div className="service__container">
       <div className="service__wrapper">
@@ -19,4 +19,4 @@ export const Service: FC = () => {
       </div>
     </div>
   );
-};
+});
