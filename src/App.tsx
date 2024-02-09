@@ -1,5 +1,6 @@
 import { FC, lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
 
 const Layout = lazy(() => import("./Source/common/Layout"));
@@ -16,6 +17,7 @@ export const App: FC = () => {
             element={
               <Layout>
                 <HomePage />
+                <Analytics />
               </Layout>
             }
           />
@@ -24,6 +26,7 @@ export const App: FC = () => {
             element={
               <Layout>
                 <MiniApps />
+                <Analytics />
               </Layout>
             }
           />
