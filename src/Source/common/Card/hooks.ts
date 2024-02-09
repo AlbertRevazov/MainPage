@@ -1,14 +1,5 @@
 import React from "react";
-export interface CardProps {
-  title: string;
-  description: string;
-  src: string;
-  srcLight?: string | "";
-  alt: string;
-  width?: number;
-  height?: number;
-  isWork?: boolean;
-}
+
 export const useHookCards = () => {
   const [isHover, setIsHover] = React.useState<boolean>(false);
 
@@ -28,5 +19,6 @@ export const useHookCards = () => {
     padding: "15px",
     transition: "0.5s",
   };
+
   return { handleMouseEnter, isHover, handleMouseLeave, hoverStyle };
 };

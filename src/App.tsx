@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Layout } from "./Source/components/Layout";
+import { Layout } from "./Source/common/Layout";
 import { HomePage } from "./Source/components/Home";
 import { MiniApps } from "./Source/components/MiniApps";
 import "./App.css";
@@ -18,7 +18,7 @@ export const App: FC = () => {
               </Layout>
             }
           />
-           <Route
+          <Route
             path="/apps"
             element={
               <Layout>

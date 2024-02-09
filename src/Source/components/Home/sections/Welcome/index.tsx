@@ -1,11 +1,9 @@
-import { FC } from "react";
-import { Links } from "../../../Links";
-import { Icon } from "../../../Icon";
+import React, { FC } from "react";
+import { Links } from "../../../../common/Links";
+import { Icon } from "../../../../common/Icon";
 import "./styles.css";
 
 export const Welcome: FC = () => {
-
-
   return (
     <div className="welcome container">
       <div className="wrapper__container">

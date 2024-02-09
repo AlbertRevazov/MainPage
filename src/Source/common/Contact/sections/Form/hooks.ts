@@ -19,7 +19,7 @@ export const useFormHook = () => {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     try {
-      const response = await send(
+      await send(
         "service_x7o7bhu",
         "template_fxyfaiq",
         toSend,

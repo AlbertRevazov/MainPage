@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { data } from "./ExperienceData";
-import { Card } from "../../../Card";
+import { Card } from "../../../../common/Card";
 import "./styles.css";
 
 export const WorkExperience: FC = () => {
@@ -16,12 +16,13 @@ export const WorkExperience: FC = () => {
             <Card
               key={exp.title}
               isWork={true}
-              alt=""
-              description={exp.description}
-              title={exp.title}
-              src={exp.src}
-              width={exp.width}
-              height={exp.height}
+              alt={exp.title}
+              item={exp}
+              // description={exp.description}
+              // title={exp.title}
+              // src={exp.src}
+              // width={exp.width}
+              // height={exp.height}
             />
           ))}
         </div>

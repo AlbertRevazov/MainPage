@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Icon } from "../../../../../Icon";
+import { Icon } from "../../../../../../common/Icon";
 import "./styles.css";
 
 export const LetsWork: FC = () => {

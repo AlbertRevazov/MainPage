@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Card } from "../../../Card";
+import { Card } from "../../../../common/Card";
 import { data } from "./ServiceData";
 import "./styles.css";
 
@@ -13,16 +13,7 @@ export const Service: FC = () => {
         </div>
         <div className="service__cards">
           {data.map((item) => (
-            <Card
-              key={item.title}
-              src={item.src}
-              srcLight={item.srcLight}
-              alt=""
-              description={item.description}
-              title={item.title}
-              width={item.width}
-              height={item.height}
-            />
+            <Card key={item.title} item={item} alt="" />
           ))}
         </div>
       </div>
