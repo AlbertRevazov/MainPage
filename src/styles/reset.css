@@ -71,3 +71,39 @@ body {
 /* MOBILE SMALL */
 @media (max-width: 479.98px) {
 }
+:root {
+	--background: #e9e8e8;
+	--background-image-block-bg: url('/public/img/block_light_bg.jpeg');
+	--background--trusted: #ededed;
+	--background--card: #ededed;
+	--background--hover: #f8461e;
+	--reverse-hover: #000000;
+	--button-hover: #f8461e;
+	--filter--brightness: 100%;
+
+	--button-green: #ffffff;
+
+	--color-primary: #000000;
+	--color-hover: #fcfafa;
+
+	--webkit-shadow: #000000;
+	--moz-shadow: #000000;
+	--box-shadow: #000000;
+}
+
+[data-theme='dark'] {
+	--background: #05010a;
+	--background-image-block-bg: url('/public/img/block-bg.jpg');
+	--background--trusted: #f8461e;
+	--background--card: #4342426d;
+	--background--hover: #f2eded;
+	--filter--brightness: 200%;
+	--button-hover: #f8461e;
+	--reverse-hover: #f8461e;
+	--color-primary: #fbfbfb;
+	--color-hover: #000000;
+	--button-green: #ffffff;
+
+	--webkit-shadow: #fbfbfb;
+	--moz-shadow: #fbfbfb;
+}

@@ -1,1 +1,0 @@
-self.__REACT_LOADABLE_MANIFEST="{\"index.tsx -> ../src/common/Layout\":{\"id\":\"index.tsx -> ../src/common/Layout\",\"files\":[\"static/chunks/src_common_Layout_index_tsx.js\"]},\"index.tsx -> ../src/components/Home\":{\"id\":\"index.tsx -> ../src/components/Home\",\"files\":[\"static/chunks/src_components_Home_index_tsx.js\"]}}"
