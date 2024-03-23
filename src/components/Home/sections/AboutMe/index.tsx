@@ -7,8 +7,8 @@ export const AboutMe: FC = () => {
   return (
     <>
       <AboutBlock />
-      <Trusted />
-      <LetsWork />
+      {/* <Trusted />
+      <LetsWork /> */}
     </>
   );
 };

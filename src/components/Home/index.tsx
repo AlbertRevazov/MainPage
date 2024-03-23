@@ -13,8 +13,8 @@ export const HomePage: FC = () => {
 	return (
 		<>
 			<Welcome />
-			{/* <AboutMe />
-      <Service />
+			<AboutMe />
+      {/* <Service />
       <WorkExperience />
       <Contact />
       <Footer /> */}

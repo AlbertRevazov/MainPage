@@ -1,31 +1,55 @@
 import { FC } from 'react'
-import './styles.css'
-import { AboutHero } from './AboutHero'
+import styles from './About.module.css'
 
 export const AboutBlock: FC = () => {
 	return (
-		<div className='about__container'>
-			<div className='about__wrapper'>
-				<div className='about__wrapper__blocks'>
-					<div className='about__years__block'>
+		<div className={styles.root}>
+			<div className={styles.container}>
+				<section className={styles.hero}>
+					<div className={styles.head_wrapper}>
+						<div className={styles.heading}>
+							<h3 className={styles.count_hero}>01</h3> about me
+						</div>
+					</div>
+					<span className={styles.span}>
+						I am engaged in web development. I love and know how to work in a
+						team, I am able to break a complex task into several simple
+						subtasks, I am always looking for optimal solutions, alternative
+						ways to improve the quality of the product.
+					</span>
+					<span className={styles.span}>
+						The plans are to master React Native.
+					</span>
+					<span className={styles.span}>
+						My position: "Respect and mutual assistance are the basis of
+						teamwork"
+					</span>
+				</section>
+				<section className={styles.about_blocks}>
+					<div className={styles.card}>
 						<img
 							src='/img/ave.jpg'
 							alt=''
-							className='years__image image image-zoom'
+							className={styles.img}
 							loading='lazy'
 						/>
-						<div className='title__years'>
-							and more tools have been studied<h3 className={'count'}>10</h3>
+						<div className={styles.title}>
+							and more tools have been studied
+							<h3 className={styles.count}>10</h3>
 						</div>
 					</div>
-					<div className='about__stack__block'>
-						<div className='title__stack'>
-							<h3 className={'count'}>+2</h3>Year of experience
+					<div className={styles.card}>
+						<div className={styles.title}>
+							<h3 className={styles.count}>+2</h3>Year of experience
 						</div>
-						<img src='/img/rew.jpg' alt='' className='image' loading='lazy' />
+						<img
+							src='/img/rew.jpg'
+							alt=''
+							className={styles.img}
+							loading='lazy'
+						/>
 					</div>
-				</div>
-				<AboutHero />
+				</section>
 			</div>
 		</div>
 	)

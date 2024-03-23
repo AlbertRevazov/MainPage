@@ -8,7 +8,7 @@ const Index = () => {
 	return (
 		<Layout>
 			<Home />
-			{/* <Analytics /> */}
+			<Analytics />
 		</Layout>
 	)
 }
