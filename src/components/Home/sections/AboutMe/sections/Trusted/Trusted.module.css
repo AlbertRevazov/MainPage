@@ -1,0 +1,19 @@
+.trusted {
+	position: relative;
+	background-color: #ededed;
+}
+
+.trusted__container {
+	max-width: 1057px;
+	padding: 80px 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.trust__item {
+	margin: 0 auto;
+	filter: brightness(0.7);
+}

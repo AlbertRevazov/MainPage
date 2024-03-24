@@ -3,9 +3,9 @@ import styles from './About.module.css'
 
 export const AboutBlock: FC = () => {
 	return (
-		<div className={styles.root}>
+		<section className={styles.root}>
 			<div className={styles.container}>
-				<section className={styles.hero}>
+				<article className={styles.hero}>
 					<div className={styles.head_wrapper}>
 						<div className={styles.heading}>
 							<h3 className={styles.count_hero}>01</h3> about me
@@ -24,11 +24,11 @@ export const AboutBlock: FC = () => {
 						My position: "Respect and mutual assistance are the basis of
 						teamwork"
 					</span>
-				</section>
-				<section className={styles.about_blocks}>
+				</article>
+				<article className={styles.about_blocks}>
 					<div className={styles.card}>
 						<img
-							src='/img/ave.jpg'
+							src='/img/years.jpg'
 							alt=''
 							className={styles.img}
 							loading='lazy'
@@ -38,19 +38,19 @@ export const AboutBlock: FC = () => {
 							<h3 className={styles.count}>10</h3>
 						</div>
 					</div>
-					<div className={styles.card}>
+					<div className={styles.card_second}>
 						<div className={styles.title}>
 							<h3 className={styles.count}>+2</h3>Year of experience
 						</div>
 						<img
-							src='/img/rew.jpg'
+							src='/img/stack.jpg'
 							alt=''
 							className={styles.img}
 							loading='lazy'
 						/>
 					</div>
-				</section>
+				</article>
 			</div>
-		</div>
+		</section>
 	)
 }

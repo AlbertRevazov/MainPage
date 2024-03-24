@@ -1,27 +1,18 @@
-import { FC } from "react";
-import { Icon } from "../../../../../../common/Icon";
-import "./styles.css";
+import { FC } from 'react'
+import { Icon } from '../../../../../../common/Icon'
+import { trustItems } from './data'
+import styles from './Trusted.module.css'
 
 export const Trusted: FC = () => {
-  return (
-    <div className={"trusted"}>
-      <div className="trusted__container">
-        <div className="trust__item">
-          <Icon src={"/img/icons/github.png"} alt="git" />
-        </div>
-        <div className="trust__item">
-          <Icon src={"/img/icons/node.png"} alt="node" />
-        </div>
-        <div className="trust__item">
-          <Icon src={"/img/icons/postgres.png"} alt="postgres" />
-        </div>
-        <div className="trust__item">
-          <Icon src={"/img/icons/react.png"} alt="react" />
-        </div>
-        <div className="trust__item">
-          <Icon src={"/img/icons/typescript.png"} alt="typescript" />
-        </div>
-      </div>
-    </div>
-  );
-};
+	return (
+		<section className={styles.trusted}>
+			<div className={styles.trusted__container}>
+				{trustItems.map(item => (
+					<div className={styles.trust__item} key={item.alt}>
+						<Icon src={item.src} alt={item.alt} />
+					</div>
+				))}
+			</div>
+		</section>
+	)
+}

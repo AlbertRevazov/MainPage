@@ -4,7 +4,7 @@
 	flex-direction: column;
 	justify-content: space-evenly;
 	min-height: 540px;
-	background-image: url('../../../../../public/img/block_light_bg.jpeg');
+	background-image: url('../../../../../public/img/block-bg.jpg');
 	background-size: cover;
 	overflow: hidden;
 }
@@ -58,10 +58,7 @@
 	z-index: 200;
 	padding-right: 12px;
 	border-right: 2px solid #fff;
-
-	@media (min-width: 599.98px) {
-		line-height: 90px;
-	}
+	line-height: 50px;
 }
 
 .subtitle {
