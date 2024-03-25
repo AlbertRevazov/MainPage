@@ -1,4 +1,4 @@
-export interface IWorkCardProps {
+export interface IServiceCardProps {
   alt: string;
   item: {
     title: string;

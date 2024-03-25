@@ -1,46 +1,56 @@
-import { FC } from "react";
-import { Icon } from "../Icon";
-import { useHookCards } from "./hooks";
-import { WorkCard } from "./WorkCard";
-import { IWorkCardProps } from "../../types";
-import "./styles.css";
+import { FC } from 'react'
+import { Icon } from '../Icon'
+import { useHookCards } from './hooks'
+import { IServiceCardProps } from '../../types'
+import styles from './Card.module.css'
 
-interface CardProps extends IWorkCardProps {
-  isWork?: boolean;
+interface CardProps extends IServiceCardProps {
+	isWork?: boolean
 }
 
 export const Card: FC<CardProps> = ({ item, alt, isWork }) => {
-  const { handleMouseEnter, handleMouseLeave, hoverStyle } = useHookCards();
-  return (
-    <>
-      {!isWork ? (
-        <WorkCard item={item} alt={item.title} />
-      ) : (
-        <div
-          className="work__experience__wrapper"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <Icon
-            className="work__experience__image"
-            src={item.src}
-            alt={alt}
-            width={item.width}
-            height={item.height}
-          />
-          <div className="work__experience__icon__text" style={hoverStyle}>
-            <h2>{item.title}</h2>
-            <h4>
-              {item.description.split("\n").map((string) => (
-                <div key={string}>
-                  {string}
-                  <br />
-                </div>
-              ))}
-            </h4>
-          </div>
-        </div>
-      )}
-    </>
-  );
-};
+	const { hoverStyle, handleMouseEnter, handleMouseLeave } = useHookCards()
+	return (
+		<>
+			{!isWork ? (
+				<div className={styles.service_wrapper}>
+					<div className={styles.service_icon}>
+						<Icon
+							src={item.src}
+							alt={alt}
+							width={item.width}
+							height={item.height}
+						/>
+					</div>
+					<div className={styles.service_title}>{item.title}</div>
+					<div className={styles.service_desc}>{item.description}</div>
+				</div>
+			) : (
+				<div
+					className={styles.work_wrapper}
+					onMouseEnter={handleMouseEnter}
+					onMouseLeave={handleMouseLeave}
+				>
+					<Icon
+						className={styles.work_image}
+						src={item.src}
+						alt={alt}
+						width={item.width}
+						height={item.height}
+					/>
+					<div className={styles.work_icon} style={hoverStyle}>
+						<h2>{item.title}</h2>
+						<h4>
+							{item.description.split('\n').map(string => (
+								<div key={string}>
+									{string}
+									<br />
+								</div>
+							))}
+						</h4>
+					</div>
+				</div>
+			)}
+		</>
+	)
+}

@@ -57,8 +57,10 @@
 	overflow: hidden;
 }
 
-.img:hover {
-	transform: scale(109%);
+@media (pointer: fine) {
+	.img:hover {
+		transform: scale(109%);
+	}
 }
 
 .title {

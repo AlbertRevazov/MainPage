@@ -1,0 +1,50 @@
+.root {
+  margin: 0 auto;
+  background: #fff;
+}
+
+.container {
+  max-width: 1057px;
+  margin: 40px auto;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 50px;
+  text-wrap: balance;
+  text-align: center;
+  color: #000;
+
+  @media (min-width: 767.98px) {
+    flex-direction: row-reverse;
+    justify-content: end;
+    margin: 50px 50px 0px 50px;
+  }
+}
+
+.title h3 {
+  font-family: Anton;
+  font-size: 80px;
+  line-height: 120px;
+  text-transform: uppercase;
+  color: #fe390c;
+  margin: 0 12px;
+}
+
+.title h4 {
+  font-family: Anton;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 20px;
+}

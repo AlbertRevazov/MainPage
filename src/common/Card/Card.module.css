@@ -1,0 +1,99 @@
+.service_wrapper {
+	width: 100%;
+	max-width: 300px;
+	min-height: 260px;
+	margin: 12px;
+	border-radius: 8px;
+	padding: 22px;
+	background-color: gray;
+}
+
+.service_icon {
+	margin: 21px 0;
+}
+
+.service_title {
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 30px;
+	cursor: default;
+	color: #000000;
+}
+
+.service_desc {
+	text-wrap: balance;
+	font-size: 16px;
+	line-height: 22px;
+	color: #a9a9aa;
+	cursor: default;
+}
+
+.work_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 360px;
+	height: 250px;
+	margin: 12px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.work_wrapper .work_image {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.work_icon {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.59);
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 15px;
+	transition: all 0.5s ease-in;
+}
+
+.work_image {
+	width: 100%;
+}
+
+.work_icon h2 {
+	font-family: 'Anton';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	text-align: center;
+	color: #ffffff;
+	border-bottom: 1.4px solid #fe390c;
+	cursor: default;
+}
+
+.work_icon h4 {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 15px;
+
+	letter-spacing: -0.04em;
+	color: #ffffff;
+	cursor: default;
+	text-align: left;
+	text-align: left;
+}
+
+.work_wrapper:hover {
+	.work_icon {
+		top: 0;
+		left: 0;
+	}
+}

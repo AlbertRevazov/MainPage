@@ -7,17 +7,14 @@ import { Contact } from '../../common/Contact'
 import { Footer } from '../../common/Footer'
 
 export const HomePage: FC = () => {
-	// const theme = document.body.dataset.theme
-	// useEffect(() => {}, [theme])
-
 	return (
 		<>
 			<Welcome />
 			<AboutMe />
-      {/* <Service />
-      <WorkExperience />
-      <Contact />
-      <Footer /> */}
+			<Service />
+			<WorkExperience />
+			{/* <Contact /> */}
+			{/* <Footer /> */}
 		</>
 	)
 }
