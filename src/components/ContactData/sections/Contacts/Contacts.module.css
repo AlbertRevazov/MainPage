@@ -1,0 +1,29 @@
+.contacts_root {
+	padding: 0 10px;
+	margin: 0 20px;
+}
+
+.contacts_title {
+	display: flex;
+	align-items: center;
+	font-family: Anton;
+	font-size: 40px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.count {
+	font-family: Anton;
+	font-size: 64px;
+	letter-spacing: 0.02em;
+	line-height: 96px;
+	margin: 12px 6px 12px 0;
+	color: var(--orange);
+}
+
+.contact__us {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+}

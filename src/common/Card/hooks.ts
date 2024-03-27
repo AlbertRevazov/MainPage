@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from "react"
 
 type useHookCardsReturn = {
 	handleMouseEnter: () => void
@@ -14,7 +14,7 @@ type useHookCardsReturn = {
 }
 
 export const useHookCards = (): useHookCardsReturn => {
-	const [isHover, setIsHover] = React.useState<boolean>(false)
+	const [isHover, setIsHover] = useState<boolean>(false)
 
 	const handleMouseEnter = () => {
 		setIsHover(true)
@@ -28,7 +28,7 @@ export const useHookCards = (): useHookCardsReturn => {
 		top: '0',
 		left: isHover ? 0 : '100%',
 		padding: '15px',
-		transition: '0.5s',
+		transition: 'all 0.6s ease-in',
 	}
 
 	return { handleMouseEnter, isHover, handleMouseLeave, hoverStyle }

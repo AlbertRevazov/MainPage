@@ -39,12 +39,12 @@
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	box-shadow: inset 28px -4px 0px 0px aliceblue;
+	box-shadow: inset 28px -4px 0px 0px rgb(0, 0, 0);
 	transition: 0.3s;
 }
 
-.input:checked~.slider::before {
+.input:checked ~ .slider::before {
 	transform: translateX(15px);
-	background-color: orangered;
+	background-color: var(--orange);
 	box-shadow: none;
 }

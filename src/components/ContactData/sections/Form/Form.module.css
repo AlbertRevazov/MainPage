@@ -1,0 +1,105 @@
+.wrapper {
+	max-width: 550px;
+}
+
+.email {
+	margin-top: 30px;
+}
+
+.title {
+	font-family: Anton;
+	letter-spacing: 0.4px;
+	text-transform: capitalize;
+	font-size: 21px;
+	line-height: 36px;
+	align-items: center;
+	color: var(--white);
+}
+
+.span {
+	font-family: Anton;
+	font-size: 21px;
+	text-transform: uppercase;
+	color: #fe390c;
+	margin: 0 2px;
+}
+
+.form {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact__inputs {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin: 20px 0;
+
+	@media (min-width: 699.98px) {
+		flex-direction: row;
+	}
+}
+
+.input_wrapper {
+	width: 100%;
+}
+
+.input_title {
+	font-size: 17px;
+	line-height: 27px;
+	color: var(--white);
+}
+
+.input {
+	width: 100%;
+	background: rgba(202, 205, 209, 0.172);
+	border-radius: 2px;
+	padding: 16px 8px;
+	font-size: 19px;
+	color: var(--white);
+	display: flex;
+	flex-direction: column;
+
+	@media (min-width: 699.98px) {
+		width: 95%;
+	}
+}
+
+.message {
+	margin-bottom: 20px;
+}
+
+.message span {
+	font-size: 17px;
+	line-height: 27px;
+	color: var(--white);
+}
+
+.input_message {
+	width: 100%;
+	min-height: 124px;
+	background: rgba(202, 205, 209, 0.1);
+	border-radius: 2px;
+	margin: 10px 0;
+	padding: 4px;
+	text-align: start;
+	text-wrap: balance;
+	color: var(--white);
+	overflow: auto;
+	font-size: 15px;
+}
+
+.btn {
+	padding: 15px 20px;
+	background: #fe390c;
+	border-radius: 4px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.btn span {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: var(--white);
+}

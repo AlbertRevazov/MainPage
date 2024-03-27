@@ -5,7 +5,7 @@
 	margin: 12px;
 	border-radius: 8px;
 	padding: 22px;
-	background-color: gray;
+	background-color: var(--background);
 }
 
 .service_icon {
@@ -17,14 +17,14 @@
 	font-size: 22px;
 	line-height: 30px;
 	cursor: default;
-	color: #000000;
+	color: var(--color);
 }
 
 .service_desc {
 	text-wrap: balance;
 	font-size: 16px;
 	line-height: 22px;
-	color: #a9a9aa;
+	color: var(--silver);
 	cursor: default;
 }
 
@@ -55,7 +55,6 @@
 	height: 100%;
 	box-sizing: border-box;
 	padding: 15px;
-	transition: all 0.5s ease-in;
 }
 
 .work_image {
@@ -73,8 +72,8 @@
 	justify-content: center;
 	text-transform: capitalize;
 	text-align: center;
-	color: #ffffff;
-	border-bottom: 1.4px solid #fe390c;
+	color: var(--white);
+	border-bottom: 1.4px solid var(--orange);
 	cursor: default;
 }
 
@@ -83,9 +82,8 @@
 	font-weight: 400;
 	font-size: 13px;
 	line-height: 15px;
-
 	letter-spacing: -0.04em;
-	color: #ffffff;
+	color: var(--white);
 	cursor: default;
 	text-align: left;
 	text-align: left;

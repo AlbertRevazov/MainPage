@@ -1,14 +1,12 @@
 import React from 'react'
-import { Analytics } from '@vercel/analytics/react'
 
 const Layout = React.lazy(() => import('../src/common/Layout'))
-const Home = React.lazy(() => import('../src/components/Home'))
+const Home = React.lazy(() => import('../src/pages/Home'))
 
 const Index = () => {
 	return (
 		<Layout>
 			<Home />
-			<Analytics />
 		</Layout>
 	)
 }
