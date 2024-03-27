@@ -16,7 +16,6 @@
   margin: 50px;
   text-wrap: balance;
   text-align: center;
-  color: var(--black);
 
   @media (min-width: 767.98px) {
     flex-direction: row-reverse;
@@ -38,7 +37,7 @@
   font-family: Anton;
   font-size: 40px;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--black-white);
 }
 
 .cards {

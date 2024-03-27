@@ -1,6 +1,6 @@
 .trusted {
+	background-color: var(--grey-orange);
 	position: relative;
-	background-color: #ededed;
 }
 
 .trusted__container {
@@ -15,5 +15,5 @@
 
 .trust__item {
 	margin: 0 auto;
-	filter: brightness(0.7);
+	filter: var(--trusted-filter);
 }

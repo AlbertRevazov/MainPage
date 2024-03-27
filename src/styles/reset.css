@@ -44,6 +44,7 @@ html,
 body {
 	height: 100%;
 	line-height: 1;
+	background-color: var(--white-black);
 }
 
 /* variables */
@@ -56,20 +57,34 @@ body {
 
 [data-theme='light'] {
 	--white-black: #ffffff;
-	--black-white: #000;
 	--white-orange: #fff;
+	--black-white: #000;
+	--black-orange: #000;
 	--grey-white: #857e7d;
 	--grey-orange: #ededed;
-	--black-orange: #000;
+	--grey-darkgrey: #7b7b7bca;
+	--orange-white: #fe390c;
+
 	--btn-hover: #fe390c;
+
+	--trusted-filter: brightness(0.7);
+
+	--shadow: 12px 12px 56px #000;
 }
 
 [data-theme='dark'] {
 	--white-black: #05010a;
-	--black-white: #fff;
 	--white-orange: #fe390c;
-	--grey-white: #fff;
-	--grey-orange: #fe390c;
+	--black-white: #fff;
 	--black-orange: #fe390c;
+	--grey-white: #fff;
+	--grey-orange: #f15532;
+	--grey-darkgrey: #52525276;
+	--orange-white: #fff;
+
 	--btn-hover: #ffffff;
+
+	--trusted-filter: brightness(2);
+
+	--shadow: 12px 12px 56px #fff;
 }

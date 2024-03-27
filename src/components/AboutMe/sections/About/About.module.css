@@ -1,11 +1,12 @@
 .root {
 	position: relative;
-	max-width: 1057px;
-	margin: 0 auto;
 }
 
 .container {
+	max-width: 1057px;
+	margin: 0 auto;
 	display: flex;
+	flex-direction: row-reverse;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
@@ -53,6 +54,7 @@
 	transition: transform 0.4s ease-in-out;
 	cursor: default;
 	overflow: hidden;
+	box-shadow: var(--shadow)
 }
 
 @media (pointer: fine) {
@@ -73,7 +75,7 @@
 	line-height: 20px;
 	margin: 31px 0 31px 0;
 	letter-spacing: -0.04em;
-	color: var(--black);
+	color: var(--black-white);
 	cursor: default;
 }
 
@@ -121,7 +123,7 @@
 	align-items: center;
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
-	color: var(--black);
+	color: var(--black-white);
 	margin: 22px 0;
 }
 

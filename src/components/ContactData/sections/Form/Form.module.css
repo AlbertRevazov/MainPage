@@ -96,10 +96,14 @@
 	border-radius: 4px;
 	margin: 0 auto;
 	width: 100%;
-}
-
-.btn span {
 	font-size: 12px;
 	text-transform: uppercase;
 	color: var(--white);
+	transition: all 0.3s ease-in;
+	cursor: pointer;
+}
+
+.btn:hover {
+	color: var(--black);
+	background-color: var(--white);
 }

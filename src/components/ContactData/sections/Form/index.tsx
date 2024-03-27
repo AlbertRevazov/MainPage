@@ -54,7 +54,7 @@ export const Form: FC = () => {
 						/>
 					</div>
 					<button type='submit' className={styles.btn}>
-						<span>send Message</span>
+						send message
 					</button>
 				</form>
 			</div>

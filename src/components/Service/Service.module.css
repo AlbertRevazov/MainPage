@@ -11,7 +11,7 @@
 	content: '';
 	width: 100%;
 	height: 105%;
-	background-color: #ededed;
+	background-color: var(--grey-orange);
 }
 
 .container {
@@ -27,6 +27,7 @@
 	margin: 50px;
 	text-wrap: balance;
 	text-align: center;
+	color: var(--black);
 
 	@media (min-width: 767.98px) {
 		flex-direction: row;
@@ -36,18 +37,18 @@
 	}
 }
 
+.count {
+	font-family: Anton;
+	font-size: 80px;
+	text-transform: uppercase;
+	color: var(--orange-white);
+	margin: 12px;
+}
+
 .title h4 {
 	font-family: Anton;
 	font-size: 40px;
 	text-transform: uppercase;
-}
-
-.title h3 {
-	font-family: Anton;
-	font-size: 80px;
-	text-transform: uppercase;
-	color: var(--orange);
-	margin: 12px;
 }
 
 .cards {
