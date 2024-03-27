@@ -1,5 +1,6 @@
 import { FC, ReactNode } from 'react'
 import { Nav } from './sections/Nav'
+import { Footer } from './sections/Footer'
 
 type LayoutProps = {
 	children: ReactNode
@@ -10,7 +11,7 @@ export const Layout: FC<LayoutProps> = ({ children }) => {
 		<>
 			<Nav />
 			{children}
-			<h2>footer</h2>
+			<Footer />
 		</>
 	)
 }

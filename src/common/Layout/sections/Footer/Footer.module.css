@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--black) !important;
+}
+
+.container {
+  max-width: 1057px;
+  padding: 20px 10px;
+  margin: 0 auto;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-wrap: balance;
+  color: var(--silver);
+  text-transform: capitalize;
+}
+
+.footer span {
+  font-size: 20px;
+  color: var(--orange);
+  margin: 0 5px 5px;
+}

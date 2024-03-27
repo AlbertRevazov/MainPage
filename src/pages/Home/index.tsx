@@ -4,7 +4,6 @@ import { AboutMe } from '../../components/AboutMe'
 import { Service } from '../../components/Service'
 import { WorkExperience } from '../../components/WorkExperience'
 import { ContactData } from '../../components/ContactData'
-import { Footer } from '../../common/Layout/sections/Footer'
 
 export const HomePage: FC = () => {
 	return (
@@ -14,7 +13,6 @@ export const HomePage: FC = () => {
 			<Service />
 			<WorkExperience />
 			<ContactData />
-			{/* <Footer /> */}
 		</>
 	)
 }

@@ -1,10 +1,12 @@
 import { FC } from 'react'
-import './styles.css'
+import styles from './Footer.module.css'
 
 export const Footer: FC = () => {
 	return (
-		<div className={'home__contact footer'}>
-			<p>Copyright</p> <span>A.Revazov</span> <p>2023 All Right Reserved</p>
+		<div className={styles.footer}>
+			<div className={styles.container}>
+				Copyright 2024 | All Right Reserved | Powered by <span>A.Revazov</span>
+			</div>
 		</div>
 	)
 }
