@@ -1,50 +1,48 @@
-.root {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 40px;
-}
-
-.image__switch {
-	max-width: 20px;
-	max-height: 20px;
-}
-
-.toggle_switch {
-	position: relative;
+.input {
+	height: 0;
+	width: 0;
+	visibility: hidden;
 }
 
 .label {
-	width: 10%;
-	height: 100px;
-	border-radius: 50px;
 	cursor: pointer;
+	width: 50px;
+	height: 30px;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+	background-color: #ededed;
 }
 
-.input {
-	display: none;
-}
-
-.slider {
-	width: 10%;
-	height: 10%;
-	border-radius: 50px;
-	transition: 0.3s;
-}
-
-.slider::before {
+.label:after {
 	content: '';
+	background-color: var(--grey-white);
 	position: absolute;
-	bottom: -15px;
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	box-shadow: inset 28px -4px 0px 0px rgb(0, 0, 0);
+	top: 5px;
+	left: 5px;
+	width: 20px;
+	height: 20px;
+	padding: 1px;
+	border-radius: 30px;
 	transition: 0.3s;
 }
 
-.input:checked ~ .slider::before {
-	transform: translateX(15px);
-	background-color: var(--orange);
-	box-shadow: none;
+.icon {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 20px;
+	height: 20px;
+}
+
+.input:checked+.label {
+	background-color: #64636282;
+
+}
+
+.input:checked+.label:after,
+.icon {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+
 }

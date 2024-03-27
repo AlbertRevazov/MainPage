@@ -11,22 +11,10 @@ export const Nav: FC = () => {
 					<span className={styles.letter}>R</span>EVAZ
 				</div>
 				<div className={styles.switch_wrap}>
-					<Icon
-						src='/img/light.png'
-						alt='sun'
-						className={styles.sun}
-						width={20}
-						height={20}
-					/>
+					<Icon src='/img/light.png' alt='sun' className={styles.sun} />
 
 					<Switcher />
-					<Icon
-						src='/img/dark.png'
-						alt='moon'
-						className={styles.moon}
-						width={20}
-						height={20}
-					/>
+					<Icon src='/img/dark.png' alt='moon' className={styles.moon} />
 				</div>
 				<div className={styles.btn_wrap}>
 					<a href='#contact' className={styles.button}>

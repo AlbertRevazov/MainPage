@@ -9,6 +9,7 @@
 
 * {
 	font-family: Inter;
+	cursor: default;
 	font-size: 12px;
 }
 
@@ -17,12 +18,14 @@ html {
 }
 
 a {
+
 	text-decoration: none;
 }
 
 ul,
 ol,
 li {
+
 	list-style: none;
 }
 
@@ -34,6 +37,7 @@ h5,
 h6 {
 	font-weight: inherit;
 	font-size: inherit;
+	cursor: default;
 }
 
 html,
@@ -51,11 +55,21 @@ body {
 }
 
 [data-theme='light'] {
-	--background: #ffffff;
-	--color: #000000;
+	--white-black: #ffffff;
+	--black-white: #000;
+	--white-orange: #fff;
+	--grey-white: #857e7d;
+	--grey-orange: #ededed;
+	--black-orange: #000;
+	--btn-hover: #fe390c;
 }
 
 [data-theme='dark'] {
-	--background: #05010a;
-	--color: #ffffff;
+	--white-black: #05010a;
+	--black-white: #fff;
+	--white-orange: #fe390c;
+	--grey-white: #fff;
+	--grey-orange: #fe390c;
+	--black-orange: #fe390c;
+	--btn-hover: #ffffff;
 }
