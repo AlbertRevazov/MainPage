@@ -1,0 +1,102 @@
+.root {
+	display: flex;
+	background-color: var(--white-black);
+
+}
+
+.nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1057px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.logo {
+	text-align: left;
+	font-family: Anton;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	color: var(--black-white);
+	text-transform: uppercase;
+}
+
+.logo:hover {
+	animation-delay: 2s;
+	animation-name: logo_rotate;
+	animation-duration: 1s;
+	animation-direction: normal;
+}
+
+.letter {
+	color: var(--orange);
+	font-family: Anton;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 28px;
+	margin-right: 2px;
+}
+
+.switch_wrap {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.sun,
+.moon {
+	margin: 0 8px;
+	height: 30px;
+	width: 30px;
+}
+
+
+.btn_wrap {
+	display: none;
+
+	@media (min-width: 449.98px) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 4px;
+	}
+}
+
+.button {
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 10px;
+	line-height: 1.2;
+	letter-spacing: 1px;
+	background-color: var(--black-orange);
+	color: var(--white);
+	padding: 14px 30px;
+	border-radius: 5px;
+	border: 1px solid var(--white-black);
+	transition: all 0.4s ease 0s;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: var(--btn-hover);
+	color: var(--white-black);
+}
+
+@keyframes logo_rotate {
+	0% {
+		transform: rotateX(0deg);
+	}
+
+	50% {
+		transform: rotateX(180deg);
+	}
+
+	100% {
+		transform: rotateX(0deg);
+	}
+}

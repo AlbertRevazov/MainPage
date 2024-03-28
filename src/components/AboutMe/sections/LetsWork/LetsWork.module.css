@@ -1,0 +1,72 @@
+.container {
+	position: relative;
+	bottom: 50px;
+	max-width: 1057px;
+	margin: 0 20px;
+	padding: 20px;
+	border-radius: 6px;
+	background-image: url('../../../../../public/img/lets_work_bg.jpg');
+	background-size: cover;
+
+	@media (min-width: 1099.98px) {
+		margin: 0 auto;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.title {
+	font-family: Anton;
+	font-size: 40px;
+	line-height: 60px;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--white);
+	margin: 53px auto 32px auto;
+	cursor: default;
+}
+
+.button {
+	background-color: var(--orange);
+	border-radius: 4px;
+	font-weight: 600;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: var(--white);
+	padding: 15px;
+	transition: all 0.3s ease-in;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: var(--white);
+	color: var(--black);
+
+}
+
+.download {
+	display: flex;
+	justify-content: space-around;
+	margin: 24px auto;
+}
+
+.download:hover {
+	color: var(--white);
+}
+
+.download a {
+	font-size: 14px;
+	line-height: 20px;
+	color: var(--silver);
+	margin: 0 8px;
+	transition: all 0.3s ease-in;
+}
+
+.download a:hover {
+	color: var(--white);
+}
