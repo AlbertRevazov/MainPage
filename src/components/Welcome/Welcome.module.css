@@ -3,10 +3,10 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	min-height: 540px;
 	background-image: url('../../../public/img/block-bg.jpg');
 	background-size: cover;
 	overflow: hidden;
+	padding-top: 80px;
 }
 
 .welcome__container {
@@ -95,6 +95,7 @@
 	position: relative;
 	z-index: 3;
 	display: flex;
+	padding: 60px 0;
 	margin: 0 auto;
 }
 
