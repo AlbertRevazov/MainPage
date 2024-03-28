@@ -8,9 +8,10 @@
 	background-color: var(--grey-darkgrey);
 }
 
-.service_icon img {
-	margin: 21px 0;
-	filter: brightness(3);
+.service_head {
+	display: flex;
+	justify-content: space-between;
+	padding: 24px 0;
 }
 
 .service_title {
@@ -21,10 +22,18 @@
 	color: var(--black-white);
 }
 
+.service_icon {
+	filter: brightness(3);
+}
+
+
+
 .service_desc {
 	text-wrap: balance;
 	font-size: 16px;
-	line-height: 22px;
+	line-height: 23px;
+	text-align: start;
+	text-wrap: balance;
 	color: var(--white-black);
 	cursor: default;
 }

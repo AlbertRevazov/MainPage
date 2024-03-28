@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 }
 
-* {
+*:not(input, textarea) {
 	font-family: Inter;
 	cursor: default;
 	font-size: 12px;
@@ -18,14 +18,12 @@ html {
 }
 
 a {
-
 	text-decoration: none;
 }
 
 ul,
 ol,
 li {
-
 	list-style: none;
 }
 

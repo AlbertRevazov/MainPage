@@ -12,20 +12,7 @@ export const Card: FC<CardProps> = ({ item, alt, isWork }) => {
 	const { hoverStyle, handleMouseEnter, handleMouseLeave } = useHookCards()
 	return (
 		<>
-			{!isWork ? (
-				<div className={styles.service_wrapper}>
-					<div className={styles.service_icon}>
-						<Icon
-							src={item.src}
-							alt={alt}
-							width={item.width}
-							height={item.height}
-						/>
-					</div>
-					<div className={styles.service_title}>{item.title}</div>
-					<div className={styles.service_desc}>{item.description}</div>
-				</div>
-			) : (
+			{isWork ? (
 				<div
 					className={styles.work_wrapper}
 					onMouseEnter={handleMouseEnter}
@@ -49,6 +36,21 @@ export const Card: FC<CardProps> = ({ item, alt, isWork }) => {
 							))}
 						</h4>
 					</div>
+				</div>
+			) : (
+				<div className={styles.service_wrapper}>
+					<div className={styles.service_head}>
+						<div className={styles.service_title}>{item.title}</div>
+						<Icon
+							className={styles.service_icon}
+							src={item.src}
+							alt={alt}
+							width={item.width}
+							height={item.height}
+						/>
+					</div>
+
+					<div className={styles.service_desc}>{item.description}</div>
 				</div>
 			)}
 		</>
