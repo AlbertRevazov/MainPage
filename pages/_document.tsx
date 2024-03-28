@@ -13,7 +13,7 @@ export default class MetaDocument extends Document {
 					href='https://fonts.googleapis.com/css2?&family=Anton:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:ital,wght@0,400;0,500;0,600;1,700&display=swap'
 					rel='stylesheet'
 				/>
-				<body>
+				<body data-theme='light'>
 					<Main />
 					<NextScript />
 					<Analytics />
